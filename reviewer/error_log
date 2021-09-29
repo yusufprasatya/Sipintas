@@ -1,0 +1,93 @@
+[10-Apr-2021 08:03:51 Asia/Jakarta] PHP Notice:  Undefined index: data in /home/sipr4416/public_html/reviewer/index.php on line 59
+[10-Apr-2021 08:03:51 Asia/Jakarta] PHP Notice:  Undefined index: data in /home/sipr4416/public_html/reviewer/dashboard.php on line 8
+[10-Apr-2021 09:19:43 Asia/Jakarta] PHP Notice:  Undefined index: data in /home/sipr4416/public_html/reviewer/index.php on line 59
+[10-Apr-2021 09:19:43 Asia/Jakarta] PHP Notice:  Undefined index: data in /home/sipr4416/public_html/reviewer/dashboard.php on line 8
+[10-Apr-2021 09:58:23 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/sipr4416/public_html/reviewer/pengajuan.php on line 30
+[10-Apr-2021 10:01:22 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=' in /home/sipr4416/public_html/dosen/dompdf/src/Dompdf.php on line 371
+[10-Apr-2021 10:01:29 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=' in /home/sipr4416/public_html/dosen/dompdf/src/Dompdf.php on line 371
+[10-Apr-2021 10:02:23 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=' in /home/sipr4416/public_html/dosen/dompdf/src/Dompdf.php on line 371
+[10-Apr-2021 10:02:25 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=' in /home/sipr4416/public_html/dosen/dompdf/src/Dompdf.php on line 371
+[10-Apr-2021 10:02:35 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=' in /home/sipr4416/public_html/dosen/dompdf/src/Dompdf.php on line 371
+[10-Apr-2021 10:03:41 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=' in /home/sipr4416/public_html/dosen/dompdf/src/Dompdf.php on line 371
+[10-Apr-2021 10:03:43 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=' in /home/sipr4416/public_html/dosen/dompdf/src/Dompdf.php on line 371
+[10-Apr-2021 10:06:43 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=' in /home/sipr4416/public_html/dosen/dompdf/src/Dompdf.php on line 371
+[10-Apr-2021 10:06:45 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=' in /home/sipr4416/public_html/dosen/dompdf/src/Dompdf.php on line 371
+[10-Apr-2021 10:06:48 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=' in /home/sipr4416/public_html/dosen/dompdf/src/Dompdf.php on line 371
+[10-Apr-2021 10:06:50 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=' in /home/sipr4416/public_html/dosen/dompdf/src/Dompdf.php on line 371
+[10-Apr-2021 10:31:00 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=' in /home/sipr4416/public_html/dosen/dompdf/src/Dompdf.php on line 371
+[10-Apr-2021 10:31:07 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=' in /home/sipr4416/public_html/dosen/dompdf/src/Dompdf.php on line 371
+[10-Apr-2021 10:31:08 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=' in /home/sipr4416/public_html/dosen/dompdf/src/Dompdf.php on line 371
+[10-Apr-2021 10:31:11 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=' in /home/sipr4416/public_html/dosen/dompdf/src/Dompdf.php on line 371
+[10-Apr-2021 10:31:13 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=' in /home/sipr4416/public_html/dosen/dompdf/src/Dompdf.php on line 371
+[10-Apr-2021 10:31:15 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=' in /home/sipr4416/public_html/dosen/dompdf/src/Dompdf.php on line 371
+[10-Apr-2021 10:31:16 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=' in /home/sipr4416/public_html/dosen/dompdf/src/Dompdf.php on line 371
+[10-Apr-2021 10:31:27 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=' in /home/sipr4416/public_html/dosen/dompdf/src/Dompdf.php on line 371
+[10-Apr-2021 12:36:48 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=' in /home/sipr4416/public_html/dosen/dompdf/src/Dompdf.php on line 371
+[10-Apr-2021 12:36:56 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=' in /home/sipr4416/public_html/dosen/dompdf/src/Dompdf.php on line 371
+[10-Apr-2021 12:44:01 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=' in /home/sipr4416/public_html/dosen/dompdf/src/Dompdf.php on line 371
+[11-Apr-2021 17:31:09 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/sipr4416/public_html/reviewer/pengajuan.php on line 30
+[11-Apr-2021 17:38:37 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/sipr4416/public_html/reviewer/pengajuan.php on line 30
+[11-Apr-2021 17:41:18 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/sipr4416/public_html/reviewer/pengajuan.php on line 30
+[11-Apr-2021 17:41:21 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/sipr4416/public_html/reviewer/pengajuan.php on line 30
+[11-Apr-2021 17:41:22 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/sipr4416/public_html/reviewer/pengajuan.php on line 30
+[11-Apr-2021 17:41:23 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/sipr4416/public_html/reviewer/pengajuan.php on line 30
+[11-Apr-2021 17:41:25 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/sipr4416/public_html/reviewer/pengajuan.php on line 30
+[11-Apr-2021 17:41:27 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/sipr4416/public_html/reviewer/pengajuan.php on line 30
+[11-Apr-2021 17:41:31 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/sipr4416/public_html/reviewer/pengajuan.php on line 30
+[11-Apr-2021 17:41:54 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/sipr4416/public_html/reviewer/pengajuan.php on line 30
+[11-Apr-2021 17:44:44 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/sipr4416/public_html/reviewer/pengajuan.php on line 30
+[11-Apr-2021 17:45:14 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/sipr4416/public_html/reviewer/pengajuan.php on line 30
+[11-Apr-2021 17:45:17 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/sipr4416/public_html/reviewer/pengajuan.php on line 30
+[11-Apr-2021 17:45:18 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/sipr4416/public_html/reviewer/pengajuan.php on line 30
+[11-Apr-2021 17:45:21 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/sipr4416/public_html/reviewer/pengajuan.php on line 30
+[11-Apr-2021 17:45:55 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/sipr4416/public_html/reviewer/pengajuan.php on line 30
+[11-Apr-2021 17:45:58 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/sipr4416/public_html/reviewer/pengajuan.php on line 30
+[11-Apr-2021 17:45:59 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/sipr4416/public_html/reviewer/pengajuan.php on line 30
+[11-Apr-2021 17:46:55 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/sipr4416/public_html/reviewer/pengajuan.php on line 30
+[11-Apr-2021 17:46:56 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/sipr4416/public_html/reviewer/pengajuan.php on line 30
+[11-Apr-2021 17:46:58 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/sipr4416/public_html/reviewer/pengajuan.php on line 30
+[11-Apr-2021 17:47:00 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/sipr4416/public_html/reviewer/pengajuan.php on line 30
+[11-Apr-2021 17:47:02 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/sipr4416/public_html/reviewer/pengajuan.php on line 30
+[11-Apr-2021 17:47:03 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/sipr4416/public_html/reviewer/pengajuan.php on line 30
+[11-Apr-2021 17:47:12 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/sipr4416/public_html/reviewer/pengajuan.php on line 30
+[11-Apr-2021 17:47:16 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/sipr4416/public_html/reviewer/pengajuan.php on line 30
+[11-Apr-2021 17:47:17 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/sipr4416/public_html/reviewer/pengajuan.php on line 30
+[11-Apr-2021 17:47:18 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/sipr4416/public_html/reviewer/pengajuan.php on line 30
+[11-Apr-2021 17:50:26 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/sipr4416/public_html/reviewer/pengajuan.php on line 30
+[12-Apr-2021 22:16:56 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/sipr4416/public_html/reviewer/pengajuan.php on line 30
+[12-Apr-2021 23:05:57 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/sipr4416/public_html/reviewer/pengajuan.php on line 30
+[12-Apr-2021 23:10:00 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/sipr4416/public_html/reviewer/pengajuan.php on line 30
+[14-Apr-2021 11:50:31 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/sipr4416/public_html/reviewer/pengajuan.php on line 30
+[20-Apr-2021 15:28:30 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/sipr4416/public_html/reviewer/pengajuan.php on line 30
+[28-Jul-2021 15:36:59 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/sipr4416/public_html/reviewer/pengajuan.php on line 30
+[29-Jul-2021 14:09:22 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/sipr4416/public_html/reviewer/pengajuan.php on line 30
+[29-Jul-2021 15:06:30 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/sipr4416/public_html/reviewer/pengajuan.php on line 30
+[01-Sep-2021 16:28:57 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/sipr4416/public_html/reviewer/pengajuan.php on line 30
+[01-Sep-2021 16:32:21 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/sipr4416/public_html/reviewer/pengajuan.php on line 30
+[01-Sep-2021 16:33:57 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/sipr4416/public_html/reviewer/pengajuan.php on line 30
+[11-Sep-2021 10:56:04 Asia/Jakarta] PHP Warning:  include_once(pengumuman.php): failed to open stream: No such file or directory in /home/sipr4416/public_html/reviewer/index.php on line 92
+[11-Sep-2021 10:56:04 Asia/Jakarta] PHP Warning:  include_once(): Failed opening 'pengumuman.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/sipr4416/public_html/reviewer/index.php on line 92
+[11-Sep-2021 10:56:07 Asia/Jakarta] PHP Warning:  include_once(pengumuman.php): failed to open stream: No such file or directory in /home/sipr4416/public_html/reviewer/index.php on line 92
+[11-Sep-2021 10:56:07 Asia/Jakarta] PHP Warning:  include_once(): Failed opening 'pengumuman.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/sipr4416/public_html/reviewer/index.php on line 92
+[11-Sep-2021 11:01:24 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/sipr4416/public_html/reviewer/pengajuan.php on line 30
+[11-Sep-2021 11:32:44 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/sipr4416/public_html/conn/koneksi.php:1) in /home/sipr4416/public_html/reviewer/index.php on line 5
+[11-Sep-2021 11:32:45 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/sipr4416/public_html/conn/koneksi.php:1) in /home/sipr4416/public_html/reviewer/index.php on line 5
+[11-Sep-2021 11:32:46 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/sipr4416/public_html/conn/koneksi.php:1) in /home/sipr4416/public_html/reviewer/index.php on line 5
+[11-Sep-2021 11:32:47 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/sipr4416/public_html/conn/koneksi.php:1) in /home/sipr4416/public_html/reviewer/index.php on line 5
+[11-Sep-2021 11:32:47 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/sipr4416/public_html/conn/koneksi.php:1) in /home/sipr4416/public_html/reviewer/index.php on line 5
+[11-Sep-2021 11:32:48 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/sipr4416/public_html/conn/koneksi.php:1) in /home/sipr4416/public_html/reviewer/index.php on line 5
+[11-Sep-2021 11:32:48 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/sipr4416/public_html/conn/koneksi.php:1) in /home/sipr4416/public_html/reviewer/index.php on line 5
+[11-Sep-2021 11:32:52 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/sipr4416/public_html/conn/koneksi.php:1) in /home/sipr4416/public_html/reviewer/index.php on line 5
+[11-Sep-2021 11:32:59 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/sipr4416/public_html/conn/koneksi.php:1) in /home/sipr4416/public_html/reviewer/index.php on line 5
+[11-Sep-2021 11:32:59 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/sipr4416/public_html/conn/koneksi.php:1) in /home/sipr4416/public_html/reviewer/index.php on line 5
+[11-Sep-2021 11:40:17 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/sipr4416/public_html/conn/koneksi.php:1) in /home/sipr4416/public_html/reviewer/index.php on line 5
+[11-Sep-2021 11:40:20 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/sipr4416/public_html/conn/koneksi.php:1) in /home/sipr4416/public_html/reviewer/index.php on line 5
+[11-Sep-2021 11:41:23 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/sipr4416/public_html/conn/koneksi.php:1) in /home/sipr4416/public_html/reviewer/index.php on line 5
+[11-Sep-2021 11:41:27 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/sipr4416/public_html/conn/koneksi.php:1) in /home/sipr4416/public_html/reviewer/index.php on line 5
+[11-Sep-2021 11:41:28 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/sipr4416/public_html/conn/koneksi.php:1) in /home/sipr4416/public_html/reviewer/index.php on line 5
+[11-Sep-2021 11:41:47 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/sipr4416/public_html/conn/koneksi.php:1) in /home/sipr4416/public_html/reviewer/index.php on line 5
+[11-Sep-2021 11:41:48 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/sipr4416/public_html/conn/koneksi.php:1) in /home/sipr4416/public_html/reviewer/index.php on line 5
+[11-Sep-2021 11:41:49 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/sipr4416/public_html/conn/koneksi.php:1) in /home/sipr4416/public_html/reviewer/index.php on line 5
+[20-Sep-2021 17:24:04 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/sipr4416/public_html/reviewer/pengajuan.php on line 30
+[20-Sep-2021 17:26:45 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/sipr4416/public_html/reviewer/pengajuan.php on line 30
+[20-Sep-2021 17:28:00 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/sipr4416/public_html/reviewer/pengajuan.php on line 30

@@ -1,0 +1,59 @@
+[09-Apr-2021 16:14:02 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/sipr4416/public_html/admin/index.php:58) in /home/sipr4416/public_html/admin/index.php on line 116
+[09-Apr-2021 16:14:14 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/sipr4416/public_html/admin/index.php:58) in /home/sipr4416/public_html/admin/index.php on line 116
+[09-Apr-2021 16:14:23 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/sipr4416/public_html/admin/index.php:58) in /home/sipr4416/public_html/admin/index.php on line 116
+[09-Apr-2021 20:53:32 Asia/Jakarta] PHP Notice:  Undefined index: data in /home/sipr4416/public_html/admin/index.php on line 58
+[09-Apr-2021 22:55:38 Asia/Jakarta] PHP Notice:  Undefined index: data in /home/sipr4416/public_html/admin/index.php on line 58
+[10-Apr-2021 06:19:14 Asia/Jakarta] PHP Notice:  Undefined index: data in /home/sipr4416/public_html/admin/index.php on line 58
+[10-Apr-2021 07:56:49 Asia/Jakarta] PHP Notice:  Undefined index: data in /home/sipr4416/public_html/admin/index.php on line 58
+[10-Apr-2021 08:03:44 Asia/Jakarta] PHP Notice:  Undefined index: data in /home/sipr4416/public_html/admin/index.php on line 58
+[10-Apr-2021 09:09:24 Asia/Jakarta] PHP Notice:  Undefined index: data in /home/sipr4416/public_html/admin/index.php on line 58
+[10-Apr-2021 09:11:18 Asia/Jakarta] PHP Notice:  Undefined index: data in /home/sipr4416/public_html/admin/index.php on line 58
+[10-Apr-2021 09:19:29 Asia/Jakarta] PHP Notice:  Undefined index: data in /home/sipr4416/public_html/admin/index.php on line 58
+[10-Apr-2021 10:30:25 Asia/Jakarta] PHP Notice:  Undefined index: data in /home/sipr4416/public_html/admin/index.php on line 58
+[11-Apr-2021 18:59:07 Asia/Jakarta] PHP Warning:  unlink(../files/2021-04-11210899883form topik yusuf(011180142.pdf): No such file or directory in /home/sipr4416/public_html/admin/pengajuan_hapus.php on line 16
+[11-Apr-2021 18:59:07 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/sipr4416/public_html/admin/pengajuan_hapus.php:17) in /home/sipr4416/public_html/admin/pengajuan_hapus.php on line 18
+[11-Apr-2021 18:59:30 Asia/Jakarta] PHP Warning:  unlink(../files/): Is a directory in /home/sipr4416/public_html/admin/pengajuan_hapus.php on line 10
+[11-Apr-2021 18:59:30 Asia/Jakarta] PHP Warning:  unlink(../files/): Is a directory in /home/sipr4416/public_html/admin/pengajuan_hapus.php on line 11
+[11-Apr-2021 18:59:30 Asia/Jakarta] PHP Warning:  unlink(../files/): Is a directory in /home/sipr4416/public_html/admin/pengajuan_hapus.php on line 12
+[11-Apr-2021 18:59:30 Asia/Jakarta] PHP Warning:  unlink(../files/): Is a directory in /home/sipr4416/public_html/admin/pengajuan_hapus.php on line 13
+[11-Apr-2021 18:59:30 Asia/Jakarta] PHP Warning:  unlink(../files/): Is a directory in /home/sipr4416/public_html/admin/pengajuan_hapus.php on line 14
+[11-Apr-2021 18:59:30 Asia/Jakarta] PHP Warning:  unlink(../files/): Is a directory in /home/sipr4416/public_html/admin/pengajuan_hapus.php on line 15
+[11-Apr-2021 18:59:30 Asia/Jakarta] PHP Warning:  unlink(../files/): Is a directory in /home/sipr4416/public_html/admin/pengajuan_hapus.php on line 16
+[11-Apr-2021 18:59:30 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/sipr4416/public_html/admin/pengajuan_hapus.php:17) in /home/sipr4416/public_html/admin/pengajuan_hapus.php on line 18
+[11-Apr-2021 19:01:21 Asia/Jakarta] PHP Warning:  unlink(../files/): Is a directory in /home/sipr4416/public_html/admin/pengajuan_hapus.php on line 10
+[11-Apr-2021 19:01:21 Asia/Jakarta] PHP Warning:  unlink(../files/): Is a directory in /home/sipr4416/public_html/admin/pengajuan_hapus.php on line 11
+[11-Apr-2021 19:01:21 Asia/Jakarta] PHP Warning:  unlink(../files/): Is a directory in /home/sipr4416/public_html/admin/pengajuan_hapus.php on line 12
+[11-Apr-2021 19:01:21 Asia/Jakarta] PHP Warning:  unlink(../files/): Is a directory in /home/sipr4416/public_html/admin/pengajuan_hapus.php on line 13
+[11-Apr-2021 19:01:21 Asia/Jakarta] PHP Warning:  unlink(../files/): Is a directory in /home/sipr4416/public_html/admin/pengajuan_hapus.php on line 14
+[11-Apr-2021 19:01:21 Asia/Jakarta] PHP Warning:  unlink(../files/): Is a directory in /home/sipr4416/public_html/admin/pengajuan_hapus.php on line 15
+[11-Apr-2021 19:01:21 Asia/Jakarta] PHP Warning:  unlink(../files/): Is a directory in /home/sipr4416/public_html/admin/pengajuan_hapus.php on line 16
+[11-Apr-2021 19:01:21 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/sipr4416/public_html/admin/pengajuan_hapus.php:17) in /home/sipr4416/public_html/admin/pengajuan_hapus.php on line 18
+[11-Apr-2021 19:03:51 Asia/Jakarta] PHP Warning:  unlink(../files/2021-04-111209943012.pdf): No such file or directory in /home/sipr4416/public_html/admin/pengajuan_hapus.php on line 16
+[11-Apr-2021 19:03:51 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/sipr4416/public_html/admin/pengajuan_hapus.php:17) in /home/sipr4416/public_html/admin/pengajuan_hapus.php on line 18
+[28-Jul-2021 15:22:38 Asia/Jakarta] PHP Warning:  unlink(../files/2021-04-122109889934Lampiran B.9. Biodata Ketua dan Anggota Tim Pengusul.pdf): No such file or directory in /home/sipr4416/public_html/admin/pengajuan_hapus.php on line 15
+[11-Sep-2021 09:34:33 Asia/Jakarta] PHP Warning:  include_once(pengumuman.php): failed to open stream: No such file or directory in /home/sipr4416/public_html/admin/index.php on line 107
+[11-Sep-2021 09:34:33 Asia/Jakarta] PHP Warning:  include_once(): Failed opening 'pengumuman.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/sipr4416/public_html/admin/index.php on line 107
+[11-Sep-2021 09:34:35 Asia/Jakarta] PHP Warning:  include_once(pengumuman.php): failed to open stream: No such file or directory in /home/sipr4416/public_html/admin/index.php on line 107
+[11-Sep-2021 09:34:35 Asia/Jakarta] PHP Warning:  include_once(): Failed opening 'pengumuman.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/sipr4416/public_html/admin/index.php on line 107
+[11-Sep-2021 09:34:36 Asia/Jakarta] PHP Warning:  include_once(laporan_kemajuan.php): failed to open stream: No such file or directory in /home/sipr4416/public_html/admin/index.php on line 105
+[11-Sep-2021 09:34:36 Asia/Jakarta] PHP Warning:  include_once(): Failed opening 'laporan_kemajuan.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/sipr4416/public_html/admin/index.php on line 105
+[11-Sep-2021 09:35:01 Asia/Jakarta] PHP Warning:  include_once(pengumuman.php): failed to open stream: No such file or directory in /home/sipr4416/public_html/admin/index.php on line 107
+[11-Sep-2021 09:35:01 Asia/Jakarta] PHP Warning:  include_once(): Failed opening 'pengumuman.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/sipr4416/public_html/admin/index.php on line 107
+[11-Sep-2021 09:35:06 Asia/Jakarta] PHP Warning:  include_once(laporan_kemajuan.php): failed to open stream: No such file or directory in /home/sipr4416/public_html/admin/index.php on line 105
+[11-Sep-2021 09:35:06 Asia/Jakarta] PHP Warning:  include_once(): Failed opening 'laporan_kemajuan.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/sipr4416/public_html/admin/index.php on line 105
+[11-Sep-2021 09:35:35 Asia/Jakarta] PHP Warning:  include_once(pengumuman.php): failed to open stream: No such file or directory in /home/sipr4416/public_html/admin/index.php on line 107
+[11-Sep-2021 09:35:35 Asia/Jakarta] PHP Warning:  include_once(): Failed opening 'pengumuman.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/sipr4416/public_html/admin/index.php on line 107
+[11-Sep-2021 09:36:22 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/sipr4416/public_html/admin/pengumuman.php on line 30
+[11-Sep-2021 09:36:24 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/sipr4416/public_html/admin/pengumuman.php on line 30
+[11-Sep-2021 09:36:27 Asia/Jakarta] PHP Warning:  include_once(tambah_pengumuman.php): failed to open stream: No such file or directory in /home/sipr4416/public_html/admin/index.php on line 109
+[11-Sep-2021 09:36:27 Asia/Jakarta] PHP Warning:  include_once(): Failed opening 'tambah_pengumuman.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/sipr4416/public_html/admin/index.php on line 109
+[11-Sep-2021 09:37:27 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/sipr4416/public_html/admin/pengumuman.php on line 30
+[11-Sep-2021 09:38:35 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/sipr4416/public_html/admin/pengumuman.php on line 30
+[11-Sep-2021 09:38:37 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/sipr4416/public_html/admin/pengumuman.php on line 30
+[11-Sep-2021 09:52:47 Asia/Jakarta] PHP Warning:  unlink(../files/2021-09-11Pengumuman): No such file or directory in /home/sipr4416/public_html/admin/index.php on line 116
+[11-Sep-2021 10:24:10 Asia/Jakarta] PHP Warning:  unlink(../files/2021-09-11Pengumuman): No such file or directory in /home/sipr4416/public_html/admin/index.php on line 116
+[11-Sep-2021 10:29:57 Asia/Jakarta] PHP Warning:  include_once(laporan_kemajuan.php): failed to open stream: No such file or directory in /home/sipr4416/public_html/admin/index.php on line 105
+[11-Sep-2021 10:29:57 Asia/Jakarta] PHP Warning:  include_once(): Failed opening 'laporan_kemajuan.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/sipr4416/public_html/admin/index.php on line 105
+[11-Sep-2021 10:32:01 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/sipr4416/public_html/admin/laporan_kemajuan.php on line 24
+[11-Sep-2021 10:32:05 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/sipr4416/public_html/admin/laporan_kemajuan.php on line 24
+[11-Sep-2021 10:33:23 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/sipr4416/public_html/admin/laporan_kemajuan.php on line 24
