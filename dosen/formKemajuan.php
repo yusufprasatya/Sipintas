@@ -18,10 +18,10 @@ if (isset($_POST['submit'])) {
         $query = mysqli_query($koneksi, "INSERT INTO laporan_kemajuan(id_dosen,id_pengajuan,tgl_diajukan,nama_file)  VALUES('$id_dosen','$id_pengajuan','$tgl','$nama_file')");
         if ($query) {
             echo "<script>alert('Berhasil')</script>";
-            echo "<script>location='index.php?p=laporan_kemajuan'</script>";
+            echo "<script>location='index.php?page=laporan-kemajuan'</script>";
         } else {
             echo "<script>alert('Gagal')</script>";
-            echo "<script>location='index.php?p=laporan_kemajuan'</script>";
+            echo "<script>location='index.php?page=laporan-kemajuan'</script>";
         }
     } else {
         echo "<script>alert('Gagal cuy')</script>";

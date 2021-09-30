@@ -1,6 +1,4 @@
 <?php
-include 'conn/koneksi.php';
-
 if (isset($_POST['upload'])) {
     $id_dosen        = $_SESSION['data']['id_dosen'];
     $nidn        = $_SESSION['data']['nidn'];
@@ -51,13 +49,13 @@ if (isset($_POST['upload'])) {
     <form action="" method="POST" class="col s12" enctype="multipart/form-data">
         <div class="row">
             <div class="input-field col s12">
-                <input disabled value="<?php echo ucwords($_SESSION['data']['nama']); ?>" id="nama" type="text" class="validate" required>
+                <input disabled value="<?= ucwords($_SESSION['data']['nama']); ?>" id="nama" type="text" class="validate" required>
                 <label for="nama">Nama Lengkap Pengusul</label>
             </div>
         </div>
         <div class="row">
             <div class="input-field col s12">
-                <input disabled value="<?php echo $_SESSION['data']['nidn']; ?>" id="nidn" type="text" class="validate" required>
+                <input disabled value="<?= $_SESSION['data']['nidn']; ?>" id="nidn" type="text" class="validate" required>
                 <label for="nidn">NIDN</label>
             </div>
         </div>

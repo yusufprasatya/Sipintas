@@ -1,6 +1,4 @@
 <?php
-include 'conn/koneksi.php';
-
 $id_dosen = $_SESSION['data']['id_dosen'];
 $no = 1;
 $pengajuan = mysqli_query($koneksi, "SELECT * FROM pengajuan INNER JOIN dosen ON pengajuan.id_dosen=dosen.id_dosen INNER JOIN ulasan ON pengajuan.id_pengajuan=ulasan.id_pengajuan INNER JOIN petugas ON ulasan.id_petugas=petugas.id_petugas WHERE pengajuan.id_dosen='$id_dosen' AND status='diterima'");
@@ -19,10 +17,10 @@ if (isset($_POST['submit'])) {
         $query = mysqli_query($koneksi, "INSERT INTO laporan_akhir (id_pengajuan,id_dosen,tgl_upload,nm_file_akhir)  VALUES('$id_pengajuan','$id_dosen','$tgl','$nama_file')");
         if ($query) {
             echo "<script>alert('Berhasil')</script>";
-            echo "<script>location='index.php?p=ulasan'</script>";
+            echo "<script>location='index.php?page=laporan-akhir'</script>";
         } else {
             echo "<script>alert('Gagal')</script>";
-            echo "<script>location='index.php?p=ulasan'</script>";
+            echo "<script>location='index.php?page=laporan-akhir'</script>";
         }
     } else {
         echo "<script>alert('Gagal')</script>";
@@ -38,19 +36,19 @@ if (isset($_POST['submit'])) {
         <input type="hidden" value="<?= $data["id_dosen"]; ?>" name="id_dosen">
         <div class="row">
             <div class="input-field col s12">
-                <input disabled value="<?php echo ucwords($_SESSION['data']['nama']); ?>" id="nama" type="text" class="validate">
+                <input disabled value="<?= ucwords($_SESSION['data']['nama']); ?>" id="nama" type="text" class="validate">
                 <label for="nama">Nama Lengkap</label>
             </div>
         </div>
         <div class="row">
             <div class="input-field col s12">
-                <input value="<?php echo $_SESSION['data']['nidn']; ?>" id="nidn" name="nidn" type="text" class="validate" disabled>
+                <input value="<?= $_SESSION['data']['nidn']; ?>" id="nidn" name="nidn" type="text" class="validate" disabled>
                 <label for="nidn">NIDN</label>
             </div>
         </div>
         <div class="row">
             <div class="input-field col s12">
-                <input value="<?php echo $data['judul_penelitian']; ?>" id="judul_penelitian" name="judul_penelitian" type="text" class="validate" disabled>
+                <input value="<?= $data['judul_penelitian']; ?>" id="judul_penelitian" name="judul_penelitian" type="text" class="validate" disabled>
                 <label for="nidn">Judul Penelitian</label>
             </div>
         </div>

@@ -1,6 +1,4 @@
 <?php
-include 'conn/koneksi.php';
-
 $id_dosen = $_SESSION['data']['id_dosen'];
 $no = 1;
 $pengajuan = mysqli_query($koneksi, "SELECT * FROM pengajuan INNER JOIN dosen ON pengajuan.id_dosen=dosen.id_dosen INNER JOIN ulasan ON pengajuan.id_pengajuan=ulasan.id_pengajuan INNER JOIN petugas ON ulasan.id_petugas=petugas.id_petugas WHERE pengajuan.id_dosen='$id_dosen' AND status='diterima'");

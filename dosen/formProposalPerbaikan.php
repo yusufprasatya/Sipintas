@@ -15,10 +15,10 @@ if (isset($_POST['upload'])) {
         $query = mysqli_query($koneksi, "INSERT INTO proposal_perbaikan (id_pengajuan,nama_file_proposal,tgl_perbaikan)  VALUES('$id_pengajuan','$nama_file','$tgl')");
         if ($query) {
             echo "<script>alert('Berhasil')</script>";
-            echo "<script>location='index.php?p=ulasan'</script>";
+            echo "<script>location='index.php?page=proposal-diterima'</script>";
         } else {
             echo "<script>alert('Gagal')</script>";
-            echo "<script>location='index.php?p=ulasan'</script>";
+            echo "<script>location='index.php?page=proposal-diterima'</script>";
         }
     }
 }

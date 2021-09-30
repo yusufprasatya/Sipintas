@@ -23,8 +23,7 @@
 				$total_data = mysqli_num_rows($query);
 				if ($total_data < 1) {
 					$total_data = 0;
-				}
-				?>
+				} ?>
 				<span class="card-title">Proposal Diterima<b class="right"><?php echo $total_data; ?></b></span>
 				<p></p>
 			</div>

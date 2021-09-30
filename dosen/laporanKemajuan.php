@@ -3,7 +3,6 @@ $id_dosen = $_SESSION['data']['id_dosen'];
 $query1 = mysqli_query($koneksi, "SELECT * FROM pengajuan WHERE id_dosen ='$id_dosen' ");
 $data1 =  mysqli_fetch_assoc($query1);
 ?>
-
 <div class="row">
     <div class="col s12 m9">
         <h3 class="orange-text">Laporan Kemajuan</h3>

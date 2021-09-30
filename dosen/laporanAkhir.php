@@ -1,12 +1,8 @@
 <?php
-include 'conn/koneksi.php';
 $id_dosen = $_SESSION['data']['id_dosen'];
 $query1 = mysqli_query($koneksi, "SELECT * FROM pengajuan WHERE id_dosen ='$id_dosen' ");
 $data =  mysqli_fetch_assoc($query1);
-
 ?>
-
-
 <div class="row">
     <div class="col s12 m9">
         <h3 class="orange-text">Laporan Akhir</h3>
@@ -29,14 +25,13 @@ $data =  mysqli_fetch_assoc($query1);
         <?php
         $no = 1;
         $query = mysqli_query($koneksi, "SELECT * FROM laporan_akhir WHERE id_dosen ='$id_dosen'");
-        while ($r = mysqli_fetch_assoc($query)) { ?>
+        while ($data = mysqli_fetch_assoc($query)) : ?>
             <tr>
                 <td><?= $no++; ?></td>
-                <td><?= $r['tgl_upload']; ?></td>
-                <td><a target="_blank" href="view/view_laporan_akhir.php?id=<?= $r['id_laporan_akhir']; ?>">Lihat Laporan</a></td>
-                <td><a class="btn modal-trigger green " href="index.php?p=hapus_laporan_kemajuan&id=<?= $r['id'] ?>">Hapus</a></td>
+                <td><?= $data['tgl_upload']; ?></td>
+                <td><a target="_blank" href="view/view_laporan_akhir.php?id=<?= $data['id_laporan_akhir']; ?>">Lihat Laporan</a></td>
+                <td><a class="btn modal-trigger green " href="index.php?p=hapus_laporan_kemajuan&id=<?= $data['id'] ?>">Hapus</a></td>
             </tr>
-        <?php  }
-        ?>
+        <?php endwhile; ?>
     </tbody>
 </table>
