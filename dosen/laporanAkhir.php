@@ -13,7 +13,7 @@ $data =  mysqli_fetch_assoc($query1);
     </div>
     <div class="col s12 m3">
         <div class="section"></div>
-        <a class="waves-effect waves-light btn green" href="index.php?p=form_laporan_akhir&id_pengajuan=<?= $data['id_pengajuan'] ?>">Tambahkan</a>
+        <a class="waves-effect waves-light btn green" href="index.php?page=form-laporan-akhir&id_pengajuan=<?= $data['id_pengajuan'] ?>">Tambahkan</a>
     </div>
 </div>
 <table id="example" class="display responsive-table" style="width:100%">

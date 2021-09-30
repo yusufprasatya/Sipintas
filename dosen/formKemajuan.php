@@ -1,6 +1,4 @@
 <?php
-include 'conn/koneksi.php';
-
 $id_dosen = $_SESSION['data']['id_dosen'];
 $id_pengajuan = $_GET['id_pengajuan'];
 $no = 1;

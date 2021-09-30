@@ -48,7 +48,7 @@ if (isset($_POST['submit'])) {
                 $query = mysqli_query($koneksi, "INSERT INTO laporan_harian(id_pengajuan,tgl_kegiatan,kegiatan,id_dosen,foto) VALUES('$id_pengajuan','$tgl_kegiatan','$kegiatan','$id_dosen','$nama')");
                 if ($query) {
                     echo "<script>alert('Berhasil')</script>";
-                    echo "<script>location='index.php?p=laporan_harian&id_pengajuan=$id_pengajuan';</script>";
+                    echo "<script>location='index.php?page=laporan-harian&id_pengajuan=$id_pengajuan';</script>";
                 }
             } else {
                 echo "<script>alert('Ukuran Gambar Tidak Lebih Dari 10MB')</script>";
@@ -60,7 +60,7 @@ if (isset($_POST['submit'])) {
         $query = mysqli_query($koneksi, "INSERT INTO laporan_harian(id_pengajuan,tgl_kegiatan,kegiatan,id_dosen,foto) VALUES('$id_pengajuan','$tgl_kegiatan','$kegiatan','$id_dosen','noImage.png')");
         if ($query) {
             echo "<script>alert('Berhasil')</script>";
-            echo "<script>location='index.php?p=laporan_harian&id_pengajuan=$id_pengajuan';</script>";
+            echo "<script>location='index.php?page=laporan-harian&id_pengajuan=$id_pengajuan';</script>";
         }
     }
 }

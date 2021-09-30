@@ -4,7 +4,7 @@ if (isset($_POST['lanjut'])) {
     $id_pengajuan = $_POST['id_pengajuan'];
     $cek = mysqli_num_rows($sql);
     if (!empty($judul_penelitian)) {
-        echo "<script>location='index.php?p=laporan_harian&id_pengajuan=$id_pengajuan'</script>";
+        echo "<script>location='index.php?page=sptb&id_pengajuan=$id_pengajuan'</script>";
     }
 }
 ?>

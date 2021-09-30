@@ -63,15 +63,15 @@ $count = mysqli_num_rows($select);
             <a href="#name"><span class="blue-text name"><?php echo ucwords($_SESSION['data']['nama']); ?><span style="color: white;" class="badge green">Dosen</span></span></a>
           </div>
         </li>
-        <li><a href="index.php?p=dashboard"><i class="material-icons">dashboard</i>Dashboard</a></li>
-        <li><a href="index.php?p=penelitian"><i class="material-icons">send</i>Proposal</a></li>
-        <li><a href="index.php?p=ulasan"><i class="material-icons">star</i>Proposal Diterima</a></li>
-        <li><a href="index.php?p=proposal-ditolak"><i class="material-icons">launch</i>Proposal Ditolak</a></li>
-        <li><a href="index.php?p=validasi-porposal-perbaikan"><i class="material-icons">launch</i>Proposal Perbaikan</a></li>
-        <li><a href="index.php?p=validasi-sptb"><i class="material-icons">report</i>SPTB</a></li>
-        <li><a href="index.php?p=validasi-laporan-harian"><i class="material-icons">report</i>Laporan Harian</a></li>
-        <li><a href="index.php?p=validasi-laporan-kemajuan"><i class="material-icons">report</i>Laporan Kemajuan</a></li>
-        <li><a href="index.php?p=validasi-laporan-akhir"><i class="material-icons">report</i>Laporan Akhir</a></li>
+        <li><a href="index.php?page=dashboard"><i class="material-icons">dashboard</i>Dashboard</a></li>
+        <li><a href="index.php?page=penelitian"><i class="material-icons">send</i>Proposal</a></li>
+        <li><a href="index.php?page=proposal-diterima"><i class="material-icons">star</i>Proposal Diterima</a></li>
+        <li><a href="index.php?page=proposal-ditolak"><i class="material-icons">launch</i>Proposal Ditolak</a></li>
+        <li><a href="index.php?page=validasi-porposal-perbaikan"><i class="material-icons">launch</i>Proposal Perbaikan</a></li>
+        <li><a href="index.php?page=validasi-sptb"><i class="material-icons">report</i>SPTB</a></li>
+        <li><a href="index.php?page=validasi-laporan-harian"><i class="material-icons">report</i>Laporan Harian</a></li>
+        <li><a href="index.php?page=validasi-laporan-kemajuan"><i class="material-icons">report</i>Laporan Kemajuan</a></li>
+        <li><a href="index.php?page=validasi-laporan-akhir"><i class="material-icons">report</i>Laporan Akhir</a></li>
         <li>
           <div class="divider"></div>
         </li>
@@ -83,86 +83,141 @@ $count = mysqli_num_rows($select);
     <div class="col s12 m9">
 
       <?php
-      if (@$_GET['p'] == "") {
-        include_once 'dashboard.php';
-      } elseif (@$_GET['p'] == "dashboard") {
-        include_once 'dashboard.php';
-      } elseif (@$_GET['p'] == "penelitian") {
-        include_once 'penelitian.php';
-      } elseif (@$_GET['p'] == "form_penelitian") {
-        include_once 'form_penelitian.php';
-      } elseif (@$_GET['p'] == "ulasan") {
-        include_once 'ulasan.php';
-      } elseif (@$_GET['p'] == "proposal-ditolak") {
-        include_once 'proposalDitolak.php';
-      } elseif (@$_GET['p'] == "laporan_harian") {
-        include_once 'laporan_harian.php';
-      } elseif (@$_GET['p'] == "proposal_perbaikan") {
-        include_once 'proposal_perbaikan.php';
-      } elseif (@$_GET['p'] == "validasi-sptb") {
-        include_once 'validasiSptb.php';
-      } elseif (@$_GET['p'] == "validasi-laporan-harian") {
-        include_once 'validasiLaporanHarian.php';
-      } elseif (@$_GET['p'] == "validasi-laporan-kemajuan") {
-        include_once 'validasiLaporanKemajuan.php';
-      } elseif (@$_GET['p'] == "validasi-laporan-akhir") {
-        include_once 'validasiLaporanAkhir.php';
-      } elseif (@$_GET['p'] == "validasi-porposal-perbaikan") {
-        include_once 'validasiPerbaikan.php';
-      } elseif (@$_GET['p'] == "proposal_perbaikan") {
-        include_once 'proposal_perbaikan.php';
-      } elseif (@$_GET['p'] == "form_proposal_perbaikan") {
-        include_once 'form_proposal_perbaikan.php';
-      } elseif (@$_GET['p'] == "laporan-kemajuan") {
-        include_once 'laporanKemajuan.php';
-      } elseif (@$_GET['p'] == "form-laporan-kemajuan") {
-        include_once 'formKemajuan.php';
-      } elseif (@$_GET['p'] == "form_laporan_harian") {
-        include_once 'form_laporan_harian.php';
-      } elseif (@$_GET['p'] == "form_laporan_akhir") {
-        include_once 'form_laporan_akhir.php';
-      } elseif (@$_GET['p'] == "laporan_akhir") {
-        include_once 'laporan_akhir.php';
-      } elseif (@$_GET['p'] == "sptb") {
-        include_once 'sptb.php';
-      } elseif (@$_GET['p'] == "pengumuman") {
-        include_once 'pengumuman.php';
-      } elseif (@$_GET['p'] == "pengajuan_hapus") {
-        $query = mysqli_query($koneksi, "SELECT * FROM pengajuan WHERE id_pengajuan='" . $_GET['id_pengajuan'] . "'");
-        $data = mysqli_fetch_assoc($query);
-        // unlink('../img/' . $data['foto']);
-        if ($data['status'] == "ditolak") {
-          $delete = mysqli_query($koneksi, "DELETE FROM pengajuan WHERE id_pengajuan='" . $_GET['id_pengajuan'] . "'");
-          header('location:index.php?p=ulasan');
-        } elseif ($data['status'] == "diterima") {
-          $delete = mysqli_query($koneksi, "DELETE FROM pengajuan WHERE id_pengajuan='" . $_GET['id_pengajuan'] . "'");
-          if ($delete) {
-            $delete2 = mysqli_query($koneksi, "DELETE FROM ulasan WHERE id_pengajuan='" . $_GET['id_pengajuan'] . "'");
-            header('location:index.php?p=ulasan');
-          }
-        }
-      } elseif (@$_GET['p'] == "kegiatan_hapus") {
-        $id_kegiatan = $_GET['id_kegiatan'];
-        $select = mysqli_query($koneksi, "SELECT * FROM laporan_harian WHERE id_kegiatan='" . $_GET['id_kegiatan'] . "'");
-        $file   = mysqli_fetch_assoc($select);
-        $query = mysqli_query($koneksi, "DELETE FROM laporan_harian WHERE id_kegiatan='" . $_GET['id_kegiatan'] . "'");
-        if ($query) {
-          if ($file['foto'] != "noImage.png") {
-            unlink("../img/" . $file['foto']);
-          }
-          echo "<script>alert('Berhasil')</script>";
-          echo "<script>location='index.php?p=laporan_harian&id_pengajuan=$id_kegiatan'</script>";
-        }
-      } elseif (@$_GET['p'] == "hapus_laporan_kemajuan") {
-        $select = mysqli_query($koneksi, "SELECT * FROM laporan_kemajuan WHERE id='" . $_GET['id'] . "'");
-        $file   = mysqli_fetch_assoc($select);
-        $query = mysqli_query($koneksi, "DELETE FROM laporan_kemajuan WHERE id='" . $_GET['id'] . "'");
-        if ($query) {
-          unlink("../files/" . $file['nama_file']);
-          echo "<script>alert('Berhasil')</script>";
-          echo "<script>location='index.php?p=laporan_kemajuan'</script>";
-        }
+      $page =  $_GET['page'];
+      switch ($page) {
+        case '':
+          include_once 'dashboard.php';
+          break;
+        case 'dashboard':
+          include_once 'dashboard.php';
+          break;
+        case 'penelitian':
+          include_once 'penelitian.php';
+          break;
+        case 'proposal-diterima':
+          include_once 'proposalDiterima.php';
+          break;
+        case 'proposal-ditolak':
+          include_once 'proposalDitolak.php';
+          break;
+        case 'validasi-porposal-perbaikan':
+          include_once 'validasiPerbaikan.php';
+          break;
+        case 'validasi-sptb':
+          include_once 'validasiSptb.php';
+          break;
+        case 'validasi-laporan-harian':
+          include_once 'validasiLaporanHarian.php';
+          break;
+        case 'validasi-laporan-kemajuan':
+          include_once 'validasiLaporanKemajuan.php';
+          break;
+        case 'validasi-laporan-akhir':
+          include_once 'validasiLaporanAkhir.php';
+          break;
+        case 'laporan-harian':
+          include_once 'laporanHarian.php';
+          break;
+        case 'laporan-kemajuan':
+          include_once 'laporanKemajuan.php';
+          break;
+        case 'laporan-akhir':
+          include_once 'laporanAkhir.php';
+          break;
+        case 'sptb':
+          include_once 'sptb.php';
+          break;
+        case 'form-laporan-harian':
+          include_once 'formLaporanHarian.php';
+          break;
+        case 'form-laporan-kemajuan':
+          include_once 'formKemajuan.php';
+          break;
+        case 'form-laporan-akhir':
+          include_once 'formLaporanAkhir.php';
+          break;
+        default:
+          # code...
+          break;
       }
+
+
+      // if (@$_GET['p'] == "") {
+      //   include_once 'dashboard.php';
+      // } elseif (@$_GET['p'] == "dashboard") {
+      //   include_once 'dashboard.php';
+      // } elseif (@$_GET['p'] == "penelitian") {
+      //   include_once 'penelitian.php';
+      // } elseif (@$_GET['p'] == "form_penelitian") {
+      //   include_once 'form_penelitian.php';
+      // } elseif (@$_GET['p'] == "ulasan") {
+      //   include_once 'ulasan.php';
+      // } elseif (@$_GET['p'] == "proposal-ditolak") {
+      //   include_once 'proposalDitolak.php';
+      // } elseif (@$_GET['p'] == "laporan_harian") {
+      //   include_once 'laporan_harian.php';
+      // } elseif (@$_GET['p'] == "validasi-sptb") {
+      //   include_once 'validasiSptb.php';
+      // } elseif (@$_GET['p'] == "validasi-laporan-harian") {
+      //   include_once 'validasiLaporanHarian.php';
+      // } elseif (@$_GET['p'] == "validasi-laporan-kemajuan") {
+      //   include_once 'validasiLaporanKemajuan.php';
+      // } elseif (@$_GET['p'] == "validasi-laporan-akhir") {
+      //   include_once 'validasiLaporanAkhir.php';
+      // } elseif (@$_GET['p'] == "validasi-porposal-perbaikan") {
+      //   include_once 'validasiPerbaikan.php';
+      // } elseif (@$_GET['p'] == "proposal-perbaikan") {
+      //   include_once 'formproposalPerbaikan.php';
+      // } elseif (@$_GET['p'] == "laporan-kemajuan") {
+      //   include_once 'laporanKemajuan.php';
+      // } elseif (@$_GET['p'] == "form-laporan-kemajuan") {
+      //   include_once 'formKemajuan.php';
+      // } elseif (@$_GET['p'] == "form_laporan_harian") {
+      //   include_once 'form_laporan_harian.php';
+      // } elseif (@$_GET['p'] == "form_laporan_akhir") {
+      //   include_once 'form_laporan_akhir.php';
+      // } elseif (@$_GET['p'] == "laporan_akhir") {
+      //   include_once 'laporan_akhir.php';
+      // } elseif (@$_GET['p'] == "sptb") {
+      //   include_once 'sptb.php';
+      // } elseif (@$_GET['p'] == "pengumuman") {
+      //   include_once 'pengumuman.php';
+      // } elseif (@$_GET['p'] == "pengajuan_hapus") {
+      //   $query = mysqli_query($koneksi, "SELECT * FROM pengajuan WHERE id_pengajuan='" . $_GET['id_pengajuan'] . "'");
+      //   $data = mysqli_fetch_assoc($query);
+      //   // unlink('../img/' . $data['foto']);
+      //   if ($data['status'] == "ditolak") {
+      //     $delete = mysqli_query($koneksi, "DELETE FROM pengajuan WHERE id_pengajuan='" . $_GET['id_pengajuan'] . "'");
+      //     header('location:index.php?p=ulasan');
+      //   } elseif ($data['status'] == "diterima") {
+      //     $delete = mysqli_query($koneksi, "DELETE FROM pengajuan WHERE id_pengajuan='" . $_GET['id_pengajuan'] . "'");
+      //     if ($delete) {
+      //       $delete2 = mysqli_query($koneksi, "DELETE FROM ulasan WHERE id_pengajuan='" . $_GET['id_pengajuan'] . "'");
+      //       header('location:index.php?p=ulasan');
+      //     }
+      //   }
+      // } elseif (@$_GET['p'] == "kegiatan_hapus") {
+      //   $id_kegiatan = $_GET['id_kegiatan'];
+      //   $select = mysqli_query($koneksi, "SELECT * FROM laporan_harian WHERE id_kegiatan='" . $_GET['id_kegiatan'] . "'");
+      //   $file   = mysqli_fetch_assoc($select);
+      //   $query = mysqli_query($koneksi, "DELETE FROM laporan_harian WHERE id_kegiatan='" . $_GET['id_kegiatan'] . "'");
+      //   if ($query) {
+      //     if ($file['foto'] != "noImage.png") {
+      //       unlink("../img/" . $file['foto']);
+      //     }
+      //     echo "<script>alert('Berhasil')</script>";
+      //     echo "<script>location='index.php?p=laporan_harian&id_pengajuan=$id_kegiatan'</script>";
+      //   }
+      // } elseif (@$_GET['p'] == "hapus_laporan_kemajuan") {
+      //   $select = mysqli_query($koneksi, "SELECT * FROM laporan_kemajuan WHERE id='" . $_GET['id'] . "'");
+      //   $file   = mysqli_fetch_assoc($select);
+      //   $query = mysqli_query($koneksi, "DELETE FROM laporan_kemajuan WHERE id='" . $_GET['id'] . "'");
+      //   if ($query) {
+      //     unlink("../files/" . $file['nama_file']);
+      //     echo "<script>alert('Berhasil')</script>";
+      //     echo "<script>location='index.php?p=laporan_kemajuan'</script>";
+      //   }
+      // }
       ?>
     </div>
   </div>
