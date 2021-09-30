@@ -94,6 +94,9 @@ $count = mysqli_num_rows($select);
         case 'penelitian':
           include_once 'penelitian.php';
           break;
+        case 'form-penelitian':
+          include_once 'formPenelitian.php';
+          break;
         case 'proposal-diterima':
           include_once 'proposalDiterima.php';
           break;
