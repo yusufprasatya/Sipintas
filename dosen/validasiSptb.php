@@ -4,7 +4,7 @@ if (isset($_POST['lanjut'])) {
     $id_pengajuan = $_POST['id_pengajuan'];
     $cek = mysqli_num_rows($sql);
     if (!empty($judul_penelitian)) {
-        echo "<script>location='index.php?p=laporan_kemajuan&id_pengajuan=$id_pengajuan'</script>";
+        echo "<script>location='index.php?p=laporan_harian&id_pengajuan=$id_pengajuan'</script>";
     }
 }
 ?>
@@ -21,14 +21,12 @@ if (isset($_POST['lanjut'])) {
                     <option value=""></option>
                     <?php
                     $id_dosen = $_SESSION['data']['id_dosen'];
-                    var_dump($id_dosen);
                     $tampil = mysqli_query($koneksi, "SELECT * FROM pengajuan WHERE status ='diterima' AND id_dosen = '$id_dosen' ");
-                    while ($r = mysqli_fetch_assoc($tampil)) { ?>
-                        <option value="<?= $r['id_pengajuan']; ?>"><?= $r['judul_penelitian'] . " " . " (" . ($r['tgl_pengajuan']) . ") "; ?></option>
-
+                    while ($data = mysqli_fetch_assoc($tampil)) : ?>
+                        <option value="<?= $data['id_pengajuan']; ?>"><?= $data['judul_penelitian'] . " " . " (" . ($data['tgl_pengajuan']) . ") "; ?></option>
                 </select>
-                <input type="hidden" name="id_pengajuan" value="<?= $r['id_pengajuan']; ?>">
-            <?php } ?>
+                <input type="hidden" name="id_pengajuan" value="<?= $data['id_pengajuan']; ?>">
+            <?php endwhile; ?>
         </td>
     </tr>
     </tr>
