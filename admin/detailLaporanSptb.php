@@ -15,14 +15,14 @@
         <?php
         $id_pengajuan = $_GET['id_pengajuan'];
         $no = 1;
-        $query = mysqli_query($koneksi, "SELECT * FROM laporan_kemajuan WHERE id_pengajuan='$id_pengajuan' ");
-        while ($r = mysqli_fetch_assoc($query)) { ?>
+        $query = mysqli_query($koneksi, "SELECT * FROM laporan_sptb WHERE id_pengajuan='$id_pengajuan' ");
+        while ($data = mysqli_fetch_assoc($query)) : ?>
             <tr>
                 <td><?= $no++ ?></td>
-                <td><?= $r['tgl_diajukan']; ?></td>
-                <td><a target="_blank" href="view/laporan_kemajuan.php?id_laporan_kemajuan=<?= $r['id'] ?>">Lihat Laporan</a>
+                <td><?= $data['tgl_upload']; ?></td>
+                <td><a target="_blank" href="view/laporanSptb.php?id_laporan_sptb=<?= $data['id'] ?>">Lihat Laporan</a>
                 </td>
             </tr>
-        <?php  } ?>
+        <?php endwhile; ?>
     </tbody>
 </table>

@@ -24,12 +24,12 @@ $data1 =  mysqli_fetch_assoc($query1);
     <tbody>
         <?php
         $no = 1;
-        $query = mysqli_query($koneksi, "SELECT * FROM laporan_kemajuan WHERE id_dosen ='$id_dosen'");
+        $query = mysqli_query($koneksi, "SELECT * FROM laporan_sptb WHERE id_dosen ='$id_dosen'");
         while ($data = mysqli_fetch_assoc($query)) : ?>
             <tr>
                 <td><?= $no++; ?></td>
-                <td><?= $data['tgl_diajukan']; ?></td>
-                <td><a target="_blank" href="view/view_laporan_kemajuan.php?id=<?= $data['id']; ?>">Lihat Laporan</a></td>
+                <td><?= $data['tgl_upload']; ?></td>
+                <td><a target="_blank" href="view/viewLaporanSptb.php?id=<?= $data['id']; ?>">Lihat Laporan</a></td>
                 <td><a class="btn modal-trigger green " href="index.php?p=hapus_laporan_kemajuan&id=<?= $data['id'] ?>">Hapus</a></td>
             </tr>
         <?php endwhile; ?>

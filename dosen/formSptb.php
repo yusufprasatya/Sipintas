@@ -6,21 +6,21 @@ $data = mysqli_fetch_assoc($pengajuan);
 
 if (isset($_POST['submit'])) {
     $id_pengajuan = $_POST["id_pengajuan"];
-    $tgl = date('Y-m-d');
+    $tgl_upload = $_POST['tgl_upload'];
     $id_pengajuan = $data["id_pengajuan"];
     $nidn = $_POST["nidn"];
     $nama = $_FILES['files']['name'];
+    $nama_file = date("F j, Y, g:i a") . $nidn . "Laporan_SPTB" . $_FILES['files']['name'];
     $tmpFilePath = $_FILES['files']['tmp_name'];
-    $newFilePath = "./../files/" . date('Y-m-d') . $nidn . "Laporan_akhir" . $_FILES['files']['name'];
+    $newFilePath = "./../files/" . $nama_file;
     if (move_uploaded_file($tmpFilePath, $newFilePath)) {
-        $nama_file = date('Y-m-d') . $nidn . "Laporan_akhir" . $_FILES['files']['name'];
-        $query = mysqli_query($koneksi, "INSERT INTO laporan_akhir (id_pengajuan,id_dosen,tgl_upload,nm_file_akhir)  VALUES('$id_pengajuan','$id_dosen','$tgl','$nama_file')");
+        $query = mysqli_query($koneksi, "INSERT INTO laporan_sptb(id_dosen,id_pengajuan,tgl_upload,nama_file)  VALUES('$id_dosen','$id_pengajuan','$tgl_upload','$nama_file')");
         if ($query) {
             echo "<script>alert('Berhasil')</script>";
-            echo "<script>location='index.php?page=laporan-akhir'</script>";
+            echo "<script>location='index.php?page=sptb'</script>";
         } else {
             echo "<script>alert('Gagal')</script>";
-            echo "<script>location='index.php?page=laporan-akhir'</script>";
+            echo "<script>location='index.php?page=sptb'</script>";
         }
     } else {
         echo "<script>alert('Gagal')</script>";
@@ -54,8 +54,8 @@ if (isset($_POST['submit'])) {
         </div>
         <div class="row">
             <div class="input-field col s12">
-                <input value="" id="tgl_kegiatan" name="tgl_kegiatan" type="date" class="validate">
-                <label for="tgl_kegiatan">Tanggal</label>
+                <input value="" id="tgl_upload" name="tgl_upload" type="date" class="validate">
+                <label for="tgl_upload">Tanggal</label>
             </div>
         </div>
         <div class="file-field input-field">
