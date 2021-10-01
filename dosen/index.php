@@ -103,6 +103,9 @@ $count = mysqli_num_rows($select);
         case 'proposal-ditolak':
           include_once 'proposalDitolak.php';
           break;
+        case 'proposal-perbaikan':
+          include_once 'formProposalPerbaikan.php';
+          break;
         case 'validasi-porposal-perbaikan':
           include_once 'validasiPerbaikan.php';
           break;
@@ -139,8 +142,11 @@ $count = mysqli_num_rows($select);
         case 'form-laporan-akhir':
           include_once 'formLaporanAkhir.php';
           break;
+        case 'form-sptb':
+          include_once 'formSptb.php';
+          break;
         default:
-          # code...
+          include_once 'dashboard.php';
           break;
       }
 

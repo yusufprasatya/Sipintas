@@ -67,6 +67,7 @@ if (!isset($_SESSION['username'])) {
                 <li><a href="index.php?p=data_pengajuan"><i class="material-icons">question_answer</i>Data Pengajuan</a></li>
                 <li><a href="index.php?p=data_ulasan"><i class="material-icons">book</i>Data Ulasan</a></li>
                 <li><a href="index.php?p=riwayat-proposal"><i class="material-icons">book</i>Riawayat Proposal</a></li>
+                <li><a href="index.php?p=laporan-sptb"><i class="material-icons">report</i>Laporan SPTB</a></li>
                 <li><a href="index.php?p=laporan_harian"><i class="material-icons">report</i>Laporan Harian</a></li>
                 <li><a href="index.php?p=laporan_kemajuan"><i class="material-icons">report</i>Laporan Kemajuan</a></li>
                 <li><a href="index.php?p=laporan_akhir"><i class="material-icons">report</i>Laporan Akhir</a></li>
@@ -106,8 +107,12 @@ if (!isset($_SESSION['username'])) {
                 include_once 'laporan_akhir.php';
             } elseif (@$_GET['p'] == "detail_laporan_akhir") {
                 include_once 'detail_laporan_akhir.php';
+            } elseif (@$_GET['p'] == "detail-laporan-sptb") {
+                include_once 'detailLaporanSptb.php';
             } elseif (@$_GET['p'] == "laporan_kemajuan") {
                 include_once 'laporan_kemajuan.php';
+            } elseif (@$_GET['p'] == "laporan-sptb") {
+                include_once 'laporanSptb.php';
             } elseif (@$_GET['p'] == "detail_laporan_kemajuan") {
                 include_once 'detail_laporan_kemajuan.php';
             } elseif (@$_GET['p'] == "pengumuman") {

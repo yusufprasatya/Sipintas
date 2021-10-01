@@ -42,10 +42,10 @@
                             $id_pengajuan = $data['id_pengajuan'];
                             $query = mysqli_query($koneksi, "SELECT * FROM ulasan WHERE id_pengajuan ='$id_pengajuan'");
                             $no = 1;
-                            while ($data = mysqli_fetch_assoc($query)) : ?>
+                            while ($data1 = mysqli_fetch_assoc($query)) : ?>
                                 <br><b>Ulasan Reviewer <?= $no++; ?></b>
-                                <p>Tanggal Ditanggapi : <?= $data['tgl_ulasan']; ?></p>
-                                <p><?= $data['ulasan']; ?></p>
+                                <p>Tanggal Ditanggapi : <?= $data1['tgl_ulasan']; ?></p>
+                                <p><?= $data1['ulasan']; ?></p>
                             <?php endwhile; ?>
                             <a href="index.php?p=proposal_perbaikan">Perbaiki Proposal</a>
                             <br>

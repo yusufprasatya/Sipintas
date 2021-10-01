@@ -31,9 +31,9 @@ include "../../conn/koneksi.php";
     echo mysqli_error($koneksi);
     ?>
     <hr>
-    <b>Judul:</b> <?php echo $data['file_b3']; ?> | <a href='../index.php?p=pengajuan'> Kembali </a>
+    <b>Judul:</b> <?= $data['file_b3']; ?> | <a href='../index.php?p=pengajuan'> Kembali </a>
     <hr>
-    <embed src="../../files/<?php echo $data['file_b3']; ?>" type="application/pdf" width="100%" height="580px">
+    <embed src="../../files/<?= $data['file_b3']; ?>" type="application/pdf" width="100%" height="580px">
 </body>
 
 </html>
