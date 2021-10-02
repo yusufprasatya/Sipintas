@@ -107,19 +107,19 @@ $count = mysqli_num_rows($select);
           include_once 'formProposalPerbaikan.php';
           break;
         case 'validasi-porposal-perbaikan':
-          include_once 'validasiPerbaikan.php';
+          include_once 'validasiProposalDiterima.php';
           break;
         case 'validasi-sptb':
-          include_once 'validasiSptb.php';
+          include_once 'validasiProposalDiterima.php';
           break;
         case 'validasi-laporan-harian':
-          include_once 'validasiLaporanHarian.php';
+          include_once 'validasiProposalDiterima.php';
           break;
         case 'validasi-laporan-kemajuan':
-          include_once 'validasiLaporanKemajuan.php';
+          include_once 'validasiProposalDiterima.php';
           break;
         case 'validasi-laporan-akhir':
-          include_once 'validasiLaporanAkhir.php';
+          include_once 'validasiProposalDiterima.php';
           break;
         case 'laporan-harian':
           include_once 'laporanHarian.php';

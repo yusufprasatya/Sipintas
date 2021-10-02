@@ -37,13 +37,13 @@ if (isset($_POST['submit'])) {
 
         <div class="row">
             <div class="input-field col s12">
-                <input disabled value="<?php echo ucwords($_SESSION['data']['nama']); ?>" id="nama" type="text" class="validate">
+                <input disabled value="<?= ucwords($_SESSION['data']['nama']); ?>" id="nama" type="text" class="validate">
                 <label for="nama">Nama Lengkap</label>
             </div>
         </div>
         <div class="row">
             <div class="input-field col s12">
-                <input disabled value="<?php echo $_SESSION['data']['nidn']; ?>" id="nidn" name="nidn" type="text" class="validate">
+                <input disabled value="<?= $_SESSION['data']['nidn']; ?>" id="nidn" name="nidn" type="text" class="validate">
                 <label for="nidn">NIDN</label>
             </div>
         </div>

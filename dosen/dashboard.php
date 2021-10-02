@@ -10,7 +10,7 @@
 					$total_data = 0;
 				}
 				?>
-				<span class="card-title">Total Proposal<b class="right"><?php echo $total_data; ?></b></span>
+				<span class="card-title">Total Proposal<b class="right"><?= $total_data; ?></b></span>
 				<p></p>
 			</div>
 		</div>
@@ -24,7 +24,7 @@
 				if ($total_data < 1) {
 					$total_data = 0;
 				} ?>
-				<span class="card-title">Proposal Diterima<b class="right"><?php echo $total_data; ?></b></span>
+				<span class="card-title">Proposal Diterima<b class="right"><?= $total_data; ?></b></span>
 				<p></p>
 			</div>
 		</div>

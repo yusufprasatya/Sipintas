@@ -1,10 +1,30 @@
 <?php
 if (isset($_POST['lanjut'])) {
+    $getPage = $_GET['page'];
     $judul_penelitian = $_POST['judul_penelitian'];
     $id_pengajuan = $_POST['id_pengajuan'];
     $cek = mysqli_num_rows($sql);
     if (!empty($judul_penelitian)) {
-        echo "<script>location='index.php?page=proposal-perbaikan&id_pengajuan=$id_pengajuan'</script>";
+        switch ($getPage) {
+            case 'validasi-porposal-perbaikan':
+                echo "<script>location='index.php?page=proposal-perbaikan&id_pengajuan=$id_pengajuan'</script>";
+                break;
+            case 'validasi-sptb':
+                echo "<script>location='index.php?page=sptb&id_pengajuan=$id_pengajuan'</script>";
+                break;
+            case 'validasi-laporan-harian':
+                echo "<script>location='index.php?page=laporan-harian&id_pengajuan=$id_pengajuan'</script>";
+                break;
+            case 'validasi-laporan-kemajuan':
+                echo "<script>location='index.php?page=laporan-kemajuan&id_pengajuan=$id_pengajuan'</script>";
+                break;
+            case 'validasi-laporan-akhir':
+                echo "<script>location='index.php?page=laporan-akhir&id_pengajuan=$id_pengajuan'</script>";
+                break;
+            default:
+                echo "<script>location='index.php?page=dashboard'</script>";
+                break;
+        }
     }
 }
 ?>
@@ -28,7 +48,6 @@ if (isset($_POST['lanjut'])) {
                 <input type="hidden" name="id_pengajuan" value="<?= $data['id_pengajuan']; ?>">
             <?php endwhile; ?>
         </td>
-    </tr>
     </tr>
     <tr>
         <td>
