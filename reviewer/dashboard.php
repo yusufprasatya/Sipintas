@@ -24,8 +24,7 @@
                 $jlmmember = mysqli_num_rows($query);
                 if ($jlmmember < 1) {
                     $jlmmember = 0;
-                }
-                ?>
+                } ?>
                 <span class="card-title">Sudah Di Review<b class="right"><?= $jlmmember; ?></b></span>
                 <p></p>
             </div>

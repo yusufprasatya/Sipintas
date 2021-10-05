@@ -1,6 +1,3 @@
-<?php
-$id_petugas = $_SESSION['data']['id_petugas'];
-?>
 <div class="row">
     <div class="col s12 m9">
         <h3 class="orange-text">Proposal</h3>
@@ -20,9 +17,11 @@ $id_petugas = $_SESSION['data']['id_petugas'];
     </thead>
     <tbody>
         <?php
+        $id_petugas = $_GET['id_petugas'] ?? "";
         $no = 1;
-        $query = mysqli_query($koneksi, "SELECT * FROM pengajuan INNER JOIN ulasan ON pengajuan.id_pengajuan=ulasan.id_pengajuan INNER JOIN petugas ON ulasan.id_petugas=petugas.id_petugas INNER JOIN dosen ON pengajuan.nidn=dosen.nidn WHERE ulasan.id_petugas='$id_petugas' ORDER BY ulasan.id_ulasan ASC");
-        while ($data = mysqli_fetch_assoc($query)) : ?>
+        $ulasan = "SELECT * FROM pengajuan INNER JOIN ulasan ON pengajuan.id_pengajuan=ulasan.id_pengajuan INNER JOIN petugas ON ulasan.id_petugas=petugas.id_petugas INNER JOIN dosen ON pengajuan.nidn=dosen.nidn WHERE ulasan.id_petugas='$id_petugas' ORDER BY ulasan.id_ulasan ASC";
+        $ulasans = query($ulasan);
+        foreach ($ulasans as $ulasan) : ?>
             <tr>
                 <td><?= $no++; ?></td>
                 <td><?= $data['nidn']; ?></td>
@@ -110,6 +109,6 @@ $id_petugas = $_SESSION['data']['id_petugas'];
                     </div>
                 </div>
             </tr>
-        <?php endwhile; ?>
+        <?php endforeach; ?>
     </tbody>
 </table>

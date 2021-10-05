@@ -2,15 +2,12 @@
 session_start();
 error_reporting(0);
 include '../conn/koneksi.php';
+include_once '../conn/functions.php';
 if (!isset($_SESSION['username'])) {
   header('location:../index.php');
 } elseif ($_SESSION['level'] != "dosen") {
   header('location:../index.php');
 }
-$select = mysqli_query($koneksi, "SELECT * FROM pengumuman");
-$count = mysqli_num_rows($select);
-
-
 ?>
 <!DOCTYPE html>
 <html>

@@ -1,6 +1,7 @@
 <?php
 session_start();
-include '../conn/koneksi.php';
+include_once '../conn/koneksi.php';
+include_once '../conn/functions.php';
 if (!isset($_SESSION['username'])) {
     header('location:../index.php');
 } elseif ($_SESSION['data']['level'] != "reviewer") {
@@ -57,10 +58,10 @@ $count = mysqli_num_rows($select);
                         <a href="#name"><span class="blue-text name"><?php echo ucwords($_SESSION['data']['nama_petugas']); ?><span style="color: white;" class="badge green">Reviewer</span></span></a>
                     </div>
                 </li>
-                <li><a href="index.php?p=dashboard"><i class="material-icons">dashboard</i>Dashboard</a></li>
-                <li><a href="index.php?p=pengajuan"><i class="material-icons">report</i>Belum Review</a></li>
-                <li><a href="index.php?p=ulasan"><i class="material-icons">question_answer</i>Telah di Review</a></li>
-                <li><a href="index.php?p=proposal_diperbaiki"><i class="material-icons">assignment_late</i>Proposal Diperbaiki</a></li>
+                <li><a href="index.php?page=dashboard"><i class="material-icons">dashboard</i>Dashboard</a></li>
+                <li><a href="index.php?page=pengajuan"><i class="material-icons">report</i>Belum Review</a></li>
+                <li><a href="index.php?page=ulasan"><i class="material-icons">question_answer</i>Telah di Review</a></li>
+                <li><a href="index.php?page=proposal-perbaikan"><i class="material-icons">assignment_late</i>Proposal Diperbaiki</a></li>
                 <li>
                     <div class="divider"></div>
                 </li>
@@ -70,23 +71,27 @@ $count = mysqli_num_rows($select);
         </div>
         <div class="col s12 m9">
             <?php
-            if (@$_GET['p'] == "") {
-                include_once 'dashboard.php';
-            } elseif (@$_GET['p'] == "dashboard") {
-                include_once 'dashboard.php';
-            } elseif (@$_GET['p'] == "pengajuan") {
-                include_once 'pengajuan.php';
-            } elseif (@$_GET['p'] == "ulasan") {
-                include_once 'ulasan.php';
-            } elseif (@$_GET['p'] == "proposal_diperbaiki") {
-                include_once 'proposalPerbaikan.php';
-            } elseif (@$_GET['p'] == "ulasan_hapus") {
-                $query = mysqli_query($koneksi, "DELETE FROM ulasan WHERE id_ulasan='" . $_GET['id_ulasan'] . "'");
-                if ($query) {
-                    echo "<script>alert('Berhasil!');</script>";
-                    echo "<script>location='index.php?p=ulasan';</script>";
-                }
-            } ?>
+            $page = $_GET["page"] ?? "";
+            switch ($page) {
+                case 'dashboard':
+                    include_once 'dashboard.php';
+                    break;
+                case 'pengajuan':
+                    include_once 'pengajuan.php';
+                    break;
+                case 'ulasan':
+                    include_once 'ulasan.php';
+                    break;
+                case 'proposal-perbaikan':
+                    include_once 'proposalPerbaikan.php';
+                    break;
+                default:
+                    include_once 'dashboard.php';
+                    break;
+            }
+
+
+            ?>
         </div>
     </div>
 

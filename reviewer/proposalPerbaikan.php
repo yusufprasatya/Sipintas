@@ -17,24 +17,25 @@
     </thead>
     <tbody>
         <?php
-        $id_petugas = $_SESSION['data']['id_petugas'];
+        $id_petugas = $_SESSION['reuslt$result']['id_petugas'];
+        $query = ("SELECT * FROM proposal_perbaikan INNER JOIN pengajuan ON pengajuan.id_pengajuan=proposal_perbaikan.id_pengajuan INNER JOIN ulasan ON ulasan.id_pengajuan=pengajuan.id_pengajuan WHERE ulasan.id_petugas='$id_petugas'");
+        $proposalDiperbaiki = query($query);
         $no = 1;
-        $query = mysqli_query($koneksi, "SELECT * FROM proposal_perbaikan INNER JOIN pengajuan ON pengajuan.id_pengajuan=proposal_perbaikan.id_pengajuan INNER JOIN ulasan ON ulasan.id_pengajuan=pengajuan.id_pengajuan WHERE ulasan.id_petugas='$id_petugas'");
-        while ($data = mysqli_fetch_assoc($query)) : ?>
+        foreach ($proposalDiperbaiki as $result) : ?>
             <tr>
                 <td><?= $no++; ?></td>
-                <td><?= $data['nidn']; ?></td>
-                <td><?= $data['nm_pengusul']; ?></td>
-                <td><?= $data['judul_penelitian']; ?></td>
-                <td><?= $data['tgl_pengajuan']; ?></td>
-                <td><?= $data['tgl_ulasan']; ?></td>
+                <td><?= $result['nidn']; ?></td>
+                <td><?= $result['nm_pengusul']; ?></td>
+                <td><?= $result['judul_penelitian']; ?></td>
+                <td><?= $result['tgl_pengajuan']; ?></td>
+                <td><?= $result['tgl_ulasan']; ?></td>
                 <td>
-                    <a target="_blank" href="view/file_proposal_diperbaiki.php?id_proposal_perbaikan=<?= $data['id_proposal_perbaikan']; ?>"> Lihat File</a>
+                    <a target="_blank" href="view/file_proposal_diperbaiki.php?id_proposal_perbaikan=<?= $result['id_proposal_perbaikan']; ?>"> Lihat File</a>
                 </td>
                 <!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
                 <!-- Modal Structure -->
             </tr>
-        <?php endwhile; ?>
+        <?php endforeach; ?>
 
     </tbody>
 </table>

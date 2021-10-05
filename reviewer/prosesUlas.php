@@ -1,6 +1,7 @@
 <?php
 session_start();
 include_once '../conn/koneksi.php';
+include_once '../conn/functions.php';
 $id_petugas = $_SESSION['data']['id_petugas'];
 if (isset($_POST['tanggapi'])) {
     $id_pengajuan = $_POST['id_pengajuan'];

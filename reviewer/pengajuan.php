@@ -17,14 +17,12 @@
         </tr>
     </thead>
     <tbody>
-
         <?php
         $no = 1;
         $id_petugas = $_SESSION['data']['id_petugas'];
-        var_dump($id_petugas);
-        // $query = mysqli_query($koneksi, "SELECT * FROM pengajuan INNER JOIN dosen ON pengajuan.nidn=dosen.nidn WHERE pengajuan.status='review' AND pengajuan.penugasan1 ='$id_petugas' OR pengajuan.penugasan2='$id_petugas'");
-        $select_penugasan = mysqli_query($koneksi, "SELECT * FROM pengajuan WHERE (penugasan1= $id_petugas OR penugasan2 = $id_petugas) AND (status='review')");
-        while ($result = mysqli_fetch_assoc($select_penugasan)) : ?>
+        $query = "SELECT * FROM pengajuan WHERE (penugasan1= $id_petugas OR penugasan2 = $id_petugas) AND (status='review')";
+        $proposalAkanDiulas = query($query);
+        foreach ($proposalAkanDiulas as $result) : ?>
             <tr>
                 <td><?= $no++; ?></td>
                 <td><?= $result['nidn']; ?></td>
@@ -159,6 +157,6 @@
                 </div>
                 <!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
             </tr>
-        <?php endwhile; ?>
+        <?php endforeach; ?>
     </tbody>
 </table>

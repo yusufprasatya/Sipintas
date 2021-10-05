@@ -4,6 +4,7 @@
 		<div style="background-color: #b26941;" class="card">
 			<div class="card-content white-text">
 				<?php
+				$totalData = query("SELECT * FROM pengajuan WHERE nidn='" . $_SESSION['data']['nidn'] . "'");
 				$query = mysqli_query($koneksi, "SELECT * FROM pengajuan WHERE nidn='" . $_SESSION['data']['nidn'] . "'");
 				$total_data = mysqli_num_rows($query);
 				if ($total_data < 1) {

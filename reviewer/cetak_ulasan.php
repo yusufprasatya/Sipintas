@@ -5,10 +5,6 @@ require_once '../conn/koneksi.php';
 $id_ulasan = $_GET['id_ulasan'];
 $ulasan = mysqli_query($koneksi, "SELECT * FROM pengajuan INNER JOIN dosen ON pengajuan.nidn=dosen.nidn INNER JOIN ulasan ON pengajuan.id_pengajuan=ulasan.id_pengajuan INNER JOIN petugas ON ulasan.id_petugas=petugas.id_petugas WHERE ulasan.id_ulasan='$id_ulasan'");
 $data = mysqli_fetch_array($ulasan);
-// echo mysqli_error($koneksi);
-// include autoloader
-
-
 
 // Reference the Dompdf namespace 
 use Dompdf\Dompdf;
