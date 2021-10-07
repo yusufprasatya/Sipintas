@@ -1,5 +1,5 @@
 <?php
-include 'conn/koneksi.php';
+include 'config/koneksi.php';
 
 if (isset($_POST['simpan'])) {
     $nidn = htmlspecialchars($_POST["nidn"]);
@@ -38,10 +38,10 @@ if (isset($_POST['simpan'])) {
     <script src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <!-- ICONS -->
 
-    <link rel="shortcut icon" href="img/logounitas.png">
+    <link rel="shortcut icon" href="assets/img/logounitas.png">
     <style>
         #loginhome {
             padding: 50px;

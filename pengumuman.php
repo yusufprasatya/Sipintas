@@ -1,8 +1,6 @@
 <?php ob_start();
-include_once 'conn/koneksi.php';
+include_once 'config/koneksi.php';
 $query = mysqli_query($koneksi, "SELECT * FROM pengumuman ORDER BY tanggal DESC");
-
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -17,10 +15,10 @@ $query = mysqli_query($koneksi, "SELECT * FROM pengumuman ORDER BY tanggal DESC"
     <script src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
     <!-- ICONS -->
-    <link rel="shortcut icon" href="img/logounitas.png">
+    <link rel="shortcut icon" href="assets/img/logounitas.png">
     <style>
         @import url(https://fonts.googleapis.com/css?family=Lobster);
         @import url(https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css);

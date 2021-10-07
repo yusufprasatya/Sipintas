@@ -1,5 +1,5 @@
 <div id="loginhome" class="card loginpage">
-	<div style="text-align: center;" class="logounitas"><img width="150px" src="img/logounitas.png" alt=""></div>
+	<div style="text-align: center;" class="logounitas"><img width="150px" src="assets/img/logounitas.png" alt=""></div>
 	<form method="POST">
 		<div class="input_field">
 			<label for="username">Username</label>
@@ -29,7 +29,7 @@ if (isset($_POST['login'])) {
 	$data2 = mysqli_fetch_assoc($sql2);
 
 	if ($cek > 0) {
-	    session_start();
+		session_start();
 		$_SESSION['username'] = $username;
 		$_SESSION['data'] = $data;
 		$_SESSION['level'] = 'dosen';
@@ -48,7 +48,6 @@ if (isset($_POST['login'])) {
 		}
 	} else {
 		echo "<script>alert('username atau password salah')</script>";
-		
 	}
 }
 ?>
