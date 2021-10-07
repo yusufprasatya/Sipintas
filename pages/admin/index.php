@@ -1,6 +1,6 @@
 <?php ob_start();
 session_start();
-include '../conn/koneksi.php';
+include '../../config/koneksi.php';
 if (!isset($_SESSION['username'])) {
     header('location:../index.php');
 } elseif ($_SESSION['data']['level'] != "admin") {
@@ -15,7 +15,7 @@ if (!isset($_SESSION['username'])) {
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="../assets/css/materialize.min.css" media="screen,projection" />
 
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -33,7 +33,7 @@ if (!isset($_SESSION['username'])) {
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
-    <link rel="shortcut icon" href="../img/logounitas.png">
+    <link rel="shortcut icon" href="../../assets/img/logounitas.png">
 
     <script type="text/javascript">
         $(document).ready(function() {
@@ -54,7 +54,7 @@ if (!isset($_SESSION['username'])) {
                         <div class="background">
                             <img src="">
                         </div>
-                        <a href="#user"><img class="circle" src="../img/logounitas.png"></a>
+                        <a href="#user"><img class="circle" src="../../assets/img/logounitas.png"></a>
                         <a href="#name"><span class="blue-text name"><?php echo ucwords($_SESSION['data']['nama_petugas']); ?><span style="color: white;" class="badge green">Admin</span></span></a>
                     </div>
 
@@ -74,7 +74,7 @@ if (!isset($_SESSION['username'])) {
                 <li>
                     <div class="divider"></div>
                 </li>
-                <li><a class="waves-effect" href="../index.php?p=logout"><i class="material-icons">logout</i>Logout</a></li>
+                <li><a class="waves-effect" href="../../index.php?p=logout"><i class="material-icons">logout</i>Logout</a></li>
             </ul>
 
             <a href="#" data-target="slide-out" class="btn sidenav-trigger"><i class="material-icons">menu</i></a>

@@ -17,7 +17,7 @@
     </thead>
     <tbody>
         <?php
-        $id_petugas = $_SESSION['reuslt$result']['id_petugas'];
+        $id_petugas = $_SESSION['data']['id_petugas'];
         $query = ("SELECT * FROM proposal_perbaikan INNER JOIN pengajuan ON pengajuan.id_pengajuan=proposal_perbaikan.id_pengajuan INNER JOIN ulasan ON ulasan.id_pengajuan=pengajuan.id_pengajuan WHERE ulasan.id_petugas='$id_petugas'");
         $proposalDiperbaiki = query($query);
         $no = 1;

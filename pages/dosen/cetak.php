@@ -1,20 +1,12 @@
 <?php
-require_once 'dompdf/autoload.inc.php';
-require_once '../conn/koneksi.php';
+require_once '/lib/dompdf/autoload.inc.php';
+require_once '../config/koneksi.php';
 
 session_start();
-
-$judul_penelitian = "Pengembanganb web aplikasi dengan UML";
-$nama_peneliti = "muhammad Yusuf";
-$reviewer = "Guntor Barokah, S.Kom, M.Kom";
-$nidn = $_SESSION['data']['nidn'];
-// $no = 1;
 $ulasan = mysqli_query($koneksi, "SELECT * FROM pengajuan INNER JOIN dosen ON pengajuan.nidn=dosen.nidn INNER JOIN ulasan ON pengajuan.id_pengajuan=ulasan.id_pengajuan INNER JOIN petugas ON ulasan.id_petugas=petugas.id_petugas WHERE pengajuan.nidn='$nidn'");
 $data = mysqli_fetch_array($ulasan);
-// echo mysqli_error($koneksi);
+
 // include autoloader
-
-
 
 // Reference the Dompdf namespace 
 use Dompdf\Dompdf;

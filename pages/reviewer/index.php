@@ -1,7 +1,7 @@
 <?php
 session_start();
-include_once '../conn/koneksi.php';
-include_once '../conn/functions.php';
+include_once '../../config/koneksi.php';
+include_once '../../config/functions.php';
 if (!isset($_SESSION['username'])) {
     header('location:../index.php');
 } elseif ($_SESSION['data']['level'] != "reviewer") {
@@ -15,11 +15,11 @@ $count = mysqli_num_rows($select);
 
 <head>
     <title>Aplikasi Unitas</title>
-    <link rel="shortcut icon" href="../img/logounitas.png">
+    <link rel="shortcut icon" href="../../assets/img/logounitas.png">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="../../assets/css/materialize.min.css" media="screen,projection" />
 
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -54,7 +54,7 @@ $count = mysqli_num_rows($select);
                         <div class="background">
                             <img src="">
                         </div>
-                        <a href="#user"><img class="circle" src="../img/logounitas.png"></a>
+                        <a href="#user"><img class="circle" src="../../assets/img/logounitas.png"></a>
                         <a href="#name"><span class="blue-text name"><?php echo ucwords($_SESSION['data']['nama_petugas']); ?><span style="color: white;" class="badge green">Reviewer</span></span></a>
                     </div>
                 </li>
@@ -65,7 +65,7 @@ $count = mysqli_num_rows($select);
                 <li>
                     <div class="divider"></div>
                 </li>
-                <li><a class="waves-effect" href="../index.php?p=logout"><i class="material-icons">logout</i>Logout</a></li>
+                <li><a class="waves-effect" href="../../index.php?p=logout"><i class="material-icons">logout</i>Logout</a></li>
             </ul>
             <a href="#" data-target="slide-out" class="btn sidenav-trigger"><i class="material-icons">menu</i></a>
         </div>

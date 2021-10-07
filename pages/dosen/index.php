@@ -1,8 +1,8 @@
 <?php
 session_start();
 error_reporting(0);
-include '../conn/koneksi.php';
-include_once '../conn/functions.php';
+include '../../config/koneksi.php';
+include_once '../../config/functions.php';
 if (!isset($_SESSION['username'])) {
   header('location:../index.php');
 } elseif ($_SESSION['level'] != "dosen") {
@@ -14,11 +14,11 @@ if (!isset($_SESSION['username'])) {
 
 <head>
   <title>Aplikasi Pengajuan proposal penelitian</title>
-  <link rel="shortcut icon" href="../img/logounitas.png">
+  <link rel="shortcut icon" href="../assets/img/logounitas.png">
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="../css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="../assets/css/materialize.min.css" media="screen,projection" />
 
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -56,7 +56,7 @@ if (!isset($_SESSION['username'])) {
             <div class="background">
               <img src="">
             </div>
-            <a href="#user"><img class="circle" src="../img/logounitas.png"></a>
+            <a href="#user"><img class="circle" src="../../assets/img/logounitas.png"></a>
             <a href="#name"><span class="blue-text name"><?php echo ucwords($_SESSION['data']['nama']); ?><span style="color: white;" class="badge green">Dosen</span></span></a>
           </div>
         </li>
@@ -72,7 +72,7 @@ if (!isset($_SESSION['username'])) {
         <li>
           <div class="divider"></div>
         </li>
-        <li><a class="waves-effect" href="../index.php?p=logout"><i class="material-icons">logout</i>Logout</a></li>
+        <li><a class="waves-effect" href="../../index.php?p=logout"><i class="material-icons">logout</i>Logout</a></li>
       </ul>
 
       <a href="#" data-target="slide-out" class="btn sidenav-trigger"><i class="material-icons">menu</i></a>
