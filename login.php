@@ -33,18 +33,18 @@ if (isset($_POST['login'])) {
 		$_SESSION['username'] = $username;
 		$_SESSION['data'] = $data;
 		$_SESSION['level'] = 'dosen';
-		header('location:dosen/');
+		header('location:pages/dosen/');
 	} elseif ($cek2 > 0) {
 		if ($data2['level'] == "admin") {
 			session_start();
 			$_SESSION['username'] = $username;
 			$_SESSION['data'] = $data2;
-			header('location:admin/');
+			header('location:pages/admin/');
 		} elseif ($data2['level'] == "reviewer") {
 			session_start();
 			$_SESSION['username'] = $username;
 			$_SESSION['data'] = $data2;
-			header('location:reviewer/');
+			header('location:pages/reviewer/');
 		}
 	} else {
 		echo "<script>alert('username atau password salah')</script>";
