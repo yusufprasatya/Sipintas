@@ -7,8 +7,6 @@ if (!isset($_SESSION['username'])) {
 } elseif ($_SESSION['data']['level'] != "reviewer") {
     header('location:../index.php');
 }
-$select = mysqli_query($koneksi, "SELECT * FROM pengumuman");
-$count = mysqli_num_rows($select);
 ?>
 <!DOCTYPE html>
 <html>
@@ -88,10 +86,7 @@ $count = mysqli_num_rows($select);
                 default:
                     include_once 'dashboard.php';
                     break;
-            }
-
-
-            ?>
+            } ?>
         </div>
     </div>
 
