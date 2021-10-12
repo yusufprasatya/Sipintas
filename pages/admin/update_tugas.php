@@ -1,5 +1,5 @@
 <?php
-include_once '../conn/koneksi.php';
+include_once '../../config/koneksi.php';
 $id_pengajuan = $_GET['id_pengajuan'] ?? "";
 $id_petugas = $_SESSION['data']['id_petugas'];
 
@@ -11,8 +11,7 @@ if (isset($_POST['submit'])) {
         echo "<script>alert('Success');</script>";
         echo "<script>location='index.php?p=data_pengajuan';</script>";
     }
-}
-?>
+} ?>
 <div class="row">
     <div class="col s12 m9">
         <h3 class="orange-text">Penugasan Reviewer</h3>

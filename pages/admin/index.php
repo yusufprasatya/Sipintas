@@ -45,7 +45,6 @@ if (!isset($_SESSION['username'])) {
 </head>
 
 <body>
-
     <div class="row">
         <div class="col s12 m3">
             <ul id="slide-out" class="sidenav sidenav-fixed">
@@ -57,7 +56,6 @@ if (!isset($_SESSION['username'])) {
                         <a href="#user"><img class="circle" src="../../assets/img/logounitas.png"></a>
                         <a href="#name"><span class="blue-text name"><?php echo ucwords($_SESSION['data']['nama_petugas']); ?><span style="color: white;" class="badge green">Admin</span></span></a>
                     </div>
-
                 </li>
                 <li><a href="index.php?p=dashboard"><i class="material-icons">dashboard</i>Dashboard</a></li>
                 <li><a href="index.php?p=pengumuman"><i class="material-icons">notifications</i>Pengumuman</a></li>
@@ -76,12 +74,9 @@ if (!isset($_SESSION['username'])) {
                 </li>
                 <li><a class="waves-effect" href="../../index.php?p=logout"><i class="material-icons">logout</i>Logout</a></li>
             </ul>
-
             <a href="#" data-target="slide-out" class="btn sidenav-trigger"><i class="material-icons">menu</i></a>
         </div>
-
         <div class="col s12 m9">
-
             <?php
             if (@$_GET['p'] == "") {
                 include_once 'dashboard.php';
@@ -173,17 +168,9 @@ if (!isset($_SESSION['username'])) {
                     echo "<script>alert('Berhasil')</script>";
                     echo "<script>location='index.php?p=laporan_kemajuan'</script>";
                 }
-            }
-            ?>
-
+            } ?>
         </div>
-
-
     </div>
-
-
-
-
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="../js/materialize.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -199,7 +186,6 @@ if (!isset($_SESSION['username'])) {
             var instances = M.Modal.init(elems);
         });
     </script>
-
 </body>
 
 </html>

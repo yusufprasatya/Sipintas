@@ -38,12 +38,28 @@ if (isset($_POST['submit'])) {
     $judul_penelitian = $_POST["judul_penelitian"];
     $kegiatan     = $_POST["kegiatan"];
 
+    for ($i = 0; $i < count($_FILES['files']['name']); $i++) {
+
+        //Get the temp file path
+        $tmpFilePath = $_FILES['files']['tmp_name'][$i];
+
+        //Make sure we have a filepath
+        if ($tmpFilePath != "") {
+
+            //Setup our new file path
+            $fileName =  date('Y-m-d') . "Laporan_kegiatan" . $nidn . $_FILES['files']['name'][$i];
+            $newFilePath = "./../files/" . $fileName;
+        }
+        $file1 = $fileName =  date('Y-m-d') . "Laporan_kegiatan" . $nidn . $_FILES['files']['name'][0];
+        $file2 = $fileName =  date('Y-m-d') . "Laporan_kegiatan" . $nidn . $_FILES['files']['name'][1];
+    }
+
     if ($foto != "") {
         if (in_array($eks, $listeks)) {
             if ($size <= 10000000) {
                 compressImage($_FILES['foto']['tmp_name'], $folder . $nama, 30);
-                //  move_uploaded_file($source, $folder . $nama);
-                $query = mysqli_query($koneksi, "INSERT INTO laporan_harian(id_pengajuan,tgl_kegiatan,kegiatan,id_dosen,foto) VALUES('$id_pengajuan','$tgl_kegiatan','$kegiatan','$id_dosen','$nama')");
+                move_uploaded_file($tmpFilePath, $newFilePath);
+                $query = mysqli_query($koneksi, "INSERT INTO laporan_harian(id_pengajuan,tgl_kegiatan,kegiatan,id_dosen,foto,file1,file2) VALUES('$id_pengajuan','$tgl_kegiatan','$kegiatan','$id_dosen','$nama','$file1','$file2')");
                 if ($query) {
                     echo "<script>alert('Berhasil')</script>";
                     echo "<script>location='index.php?page=laporan-harian&id_pengajuan=$id_pengajuan';</script>";
@@ -55,7 +71,7 @@ if (isset($_POST['submit'])) {
             echo "<script>alert('Format File Tidak Di Dukung')</script>";
         }
     } else {
-        $query = mysqli_query($koneksi, "INSERT INTO laporan_harian(id_pengajuan,tgl_kegiatan,kegiatan,id_dosen,foto) VALUES('$id_pengajuan','$tgl_kegiatan','$kegiatan','$id_dosen','noImage.png')");
+        $query = mysqli_query($koneksi, "INSERT INTO laporan_harian(id_pengajuan,tgl_kegiatan,kegiatan,id_dosen,foto,file1,file2) VALUES('$id_pengajuan','$tgl_kegiatan','$kegiatan','$id_dosen','noImage.png',NULL,NULL)");
         if ($query) {
             echo "<script>alert('Berhasil')</script>";
             echo "<script>location='index.php?page=laporan-harian&id_pengajuan=$id_pengajuan';</script>";
@@ -113,6 +129,50 @@ if (isset($_POST['submit'])) {
                 <input class="file-path validate" type="text">
             </div>
         </div>
+
+        <label for="">Tambahkan File Berupa('.pdf')</label>
+        <div class="file-field input-field">
+            <div class="btn">
+                <span>File</span>
+                <input name="files[]" type="file">
+            </div>
+            <div class="file-path-wrapper">
+                <input class="file-path validate" type="text">
+            </div>
+        </div>
+
+        <label for="">Tambahkan File Berupa('.pdf')</label>
+        <div class="file-field input-field">
+            <div class="btn">
+                <span>File</span>
+                <input name="files[]" type="file">
+            </div>
+            <div class="file-path-wrapper">
+                <input class="file-path validate" type="text">
+            </div>
+        </div>
+
+        <!-- <label for="">Tambahkan File Berupa('.pdf')</label>
+        <div class="file-field input-field">
+            <div class="btn">
+                <span>File</span>
+                <input name="file3" type="file">
+            </div>
+            <div class="file-path-wrapper">
+                <input class="file-path validate" type="text">
+            </div>
+        </div>
+
+        <label for="">Tambahkan File Berupa('.pdf')</label>
+        <div class="file-field input-field">
+            <div class="btn">
+                <span>File</span>
+                <input name="file4" type="file">
+            </div>
+            <div class="file-path-wrapper">
+                <input class="file-path validate" type="text">
+            </div>
+        </div> -->
         <button name="submit" class="btn right" type="submit">Kirim</button>
     </form>
 </div>

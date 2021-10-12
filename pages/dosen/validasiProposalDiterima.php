@@ -4,6 +4,7 @@ if (isset($_POST['lanjut'])) {
     $judul_penelitian = $_POST['judul_penelitian'];
     $id_pengajuan = $_POST['id_pengajuan'];
     $cek = mysqli_num_rows($sql);
+
     if (!empty($judul_penelitian)) {
         switch ($getPage) {
             case 'validasi-porposal-perbaikan':
@@ -36,7 +37,7 @@ if (isset($_POST['lanjut'])) {
     <tr>
         <td>
             <form action="" method="POST">
-                <label for="judul_penelitian">Pilih</label>
+                <label for="judul_penelitian">Pilih Tahun dan Judul</label>
                 <select name="judul_penelitian" id="judul_penelitian">
                     <option value=""></option>
                     <?php

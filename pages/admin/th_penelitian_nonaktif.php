@@ -1,5 +1,5 @@
 <?php
-include '../conn/koneksi.php';
+include '../../config/koneksi.php';
 
 $id_th_penelitian   = mysqli_real_escape_string($koneksi, $_GET['id_th_penelitian']);
 $query = mysqli_query($koneksi, "SELECT * FROM th_penelitian WHERE id_th_penelitian='$id_th_penelitian' ");
