@@ -16,13 +16,13 @@
         $id_pengajuan = $_GET['id_pengajuan'];
         $no = 1;
         $query = mysqli_query($koneksi, "SELECT * FROM laporan_akhir WHERE id_pengajuan='$id_pengajuan' ");
-        while ($r = mysqli_fetch_assoc($query)) { ?>
+        while ($data = mysqli_fetch_assoc($query)) : ?>
             <tr>
                 <td><?= $no++ ?></td>
-                <td><?= $r['tgl_upload']; ?></td>
-                <td><a target="_blank" href="view/laporan_akhir.php?id_laporan_akhir=<?= $r['id_laporan_akhir'] ?>">Lihat File Laporan</a>
+                <td><?= $data['tgl_upload']; ?></td>
+                <td><a target="_blank" href="view/laporan_akhir.php?id_laporan_akhir=<?= $data['id_laporan_akhir'] ?>">Lihat File Laporan</a>
                 </td>
             </tr>
-        <?php  } ?>
+        <?php endwhile; ?>
     </tbody>
 </table>

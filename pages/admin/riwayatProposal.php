@@ -33,7 +33,6 @@ $id_petugas = $_SESSION['data']['id_petugas'];
                 <td><?= $r['status']; ?></td>
                 <td>
                     <a class="btn modal-trigger green" href="#more?id_pengajuan=<?= $r['id_pengajuan'] ?>">Detail</a>
-
                 </td>
 
                 <!-- ------------------------------------------------------------------------------------------------------------------------------------ -->

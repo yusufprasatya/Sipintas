@@ -8,7 +8,7 @@ if (isset($_POST['submit'])) {
     $update = mysqli_query($koneksi, "UPDATE pengajuan SET penugasan1 = '$penugasan1', penugasan2 = '$penugasan2' WHERE id_pengajuan = '$id_pengajuan'");
     if ($update) {
         echo "<script>alert('Success');</script>";
-        echo "<script>location='index.php?p=data_ulasan';</script>";
+        echo "<script>location='index.php?page=data-ulasan';</script>";
     }
 }
 ?>

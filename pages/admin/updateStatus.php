@@ -7,7 +7,7 @@ if (isset($_POST['submit'])) {
     $update = mysqli_query($koneksi, "UPDATE pengajuan SET status = '$status_proposal'  WHERE id_pengajuan = '$id_pengajuan'");
     if ($update) {
         echo "<script>alert('Success');</script>";
-        echo "<script>location='index.php?p=data_ulasan';</script>";
+        echo "<script>location='index.php?page=data-ulasan';</script>";
     }
 }
 ?>

@@ -27,8 +27,8 @@
                     echo "/" ?><?= $r['th_penelitian2']; ?> </td>
                 <td><?= $r['status']; ?></td>
 
-                <td><a style="background-color: #6ea01d;" class="btn" href="th_penelitian_aktif.php?id_th_penelitian=<?= $r['id_th_penelitian'] ?>">Aktifkan</a>
-                    <a style="background-color: #6ea01d;" class="btn" href="th_penelitian_nonaktif.php?id_th_penelitian=<?= $r['id_th_penelitian'] ?>">NonAktifkan</a>
+                <td><a style="background-color: #6ea01d;" class="btn" href="tahunAktif.php?id_th_penelitian=<?= $r['id_th_penelitian'] ?>">Aktifkan</a>
+                    <a style="background-color: #6ea01d;" class="btn" href="tahunNonaktif.php?id_th_penelitian=<?= $r['id_th_penelitian'] ?>">NonAktifkan</a>
                     <a style="background-color: #6ea01d;" class="btn" onclick="return confirm('Anda Yakin Ingin Menghapus Y/N')" href="index.php?p=th_penelitian_hapus&id_th_penelitian=<?= $r['id_th_penelitian'] ?>">Hapus</a>
                 </td>
             </tr>

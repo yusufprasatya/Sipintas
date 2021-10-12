@@ -28,7 +28,6 @@ include "../../config/koneksi.php";
     $id_laporan_akhir   = $_GET["id_laporan_akhir"];
     $query = mysqli_query($koneksi, "SELECT * FROM laporan_akhir WHERE id_laporan_akhir='$id_laporan_akhir' ");
     $data  = mysqli_fetch_array($query);
-    echo mysqli_error($koneksi);
     ?>
     <hr>
     <b>Judul:</b> <?php echo $data['nm_file_akhir']; ?> | <a href='../index.php?p=laporan_akhir'> Kembali </a>

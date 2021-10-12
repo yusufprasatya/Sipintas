@@ -7,7 +7,6 @@
         <a class="waves-effect waves-light btn modal-trigger green" href="#modal1"><i class="material-icons">add</i></a>
     </div>
 </div>
-
 <table id="example" class="display responsive-table" style="width:100%">
     <thead>
         <tr>
@@ -62,7 +61,6 @@
                                 <input type="submit" name="Update" value="Simpan" class="btn right">
                             </div>
                         </form>
-
                         <?php
                         if (isset($_POST['Update'])) {
                             $password = md5($_POST['password']);
@@ -112,15 +110,13 @@
                 <input type="submit" name="simpan" value="Simpan" class="btn right">
             </div>
         </form>
-
         <?php
         if (isset($_POST['simpan'])) {
             $password = md5($_POST['password']);
-
             $query = mysqli_query($koneksi, "INSERT INTO dosen (nidn,nama,username,password,telp) VALUES ('" . $_POST['nidn'] . "','" . $_POST['nama'] . "','" . $_POST['username'] . "','" . $password . "','" . $_POST['telp'] . "')");
             if ($query) {
                 echo "<script>alert('Berhasil')</script>";
-                echo "<script>location='location:index.php?p=registrasi';</script>";
+                echo "<script>location='location:index.php?page=dosen';</script>";
             }
         }
         ?>

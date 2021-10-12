@@ -30,9 +30,9 @@ include "../../config/koneksi.php";
     $data  = mysqli_fetch_array($query);
     ?>
     <hr>
-    <b>Judul:</b> <?php echo $data['file']; ?> | <a href='../index.php?p=pengumuman'> Kembali </a>
+    <b>Judul:</b> <?= $data['file']; ?> | <a href='../index.php?p=pengumuman'> Kembali </a>
     <hr>
-    <embed src="../../files/<?php echo $data['file']; ?>" type="application/pdf" width="100%" height="580px">
+    <embed src="../../files/<?= $data['file']; ?>" type="application/pdf" width="100%" height="580px">
 </body>
 
 </html>

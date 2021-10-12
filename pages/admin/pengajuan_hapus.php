@@ -1,6 +1,6 @@
 <?php
 session_start();
-include '../conn/koneksi.php';
+include '../../config/koneksi.php';
 
 $id_pengajuan = $_GET['id_pengajuan'];
 $select = mysqli_query($koneksi, "SELECT * FROM pengajuan WHERE id_pengajuan='$id_pengajuan'");
@@ -15,5 +15,5 @@ if ($query) {
     unlink("../files/" . $file['file_b9']);
     unlink("../files/" . $file['file_b10']);
     echo "<script>alert('Berhasil')</script>";
-    echo "<script>location='index.php?p=data_pengajuan'</script>";
+    echo "<script>location='index.php?page=data-pengajuan'</script>";
 }

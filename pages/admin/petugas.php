@@ -80,7 +80,7 @@
                             $update = mysqli_query($koneksi, "UPDATE petugas SET nama_petugas='" . $_POST['nama'] . "',username='" . $_POST['username'] . "',password='$password',telp_petugas='" . $_POST['telp'] . "',level='" . $_POST['level'] . "' WHERE id_petugas='" . $_POST['id_petugas'] . "' ");
                             if ($update) {
                                 echo "<script>alert('Data di Update')</script>";
-                                echo "<script>location='index.php?p=petugas'</script>";
+                                echo "<script>location='index.php?page=petugas'</script>";
                             }
                         }
                         ?>
@@ -115,7 +115,6 @@
                 <label for="telp">Telp</label>
                 <input id="telp" type="number" name="telp" required><br><br>
             </div>
-
             <div class="col s12 input-field">
                 <select class="default" name="level" required>
                     <option selected disabled="">Pilih Level</option>
@@ -127,9 +126,7 @@
                 <input type="submit" name="input" value="Simpan" class="btn right">
             </div>
         </form>
-
         <?php
-
         if (isset($_POST['input'])) {
             $username = $_POST['username'];
             $dataesult = mysqli_query($koneksi, "SELECT username FROM dosen WHERE username = '$username'");
@@ -139,7 +136,7 @@
                 $query = mysqli_query($koneksi, "INSERT INTO petugas VALUES (NULL,'" . $_POST['nama'] . "','" . $username . "','" . $password . "','" . $_POST['telp'] . "','" . $_POST['level'] . "')");
                 if ($query) {
                     echo "<script>alert('Berhasil')</script>";
-                    echo "<script>location='index.php?p=petugas';</script>";
+                    echo "<script>location='index.php?page=petugas';</script>";
                 }
             } else {
                 echo "<script>

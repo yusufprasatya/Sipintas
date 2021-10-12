@@ -1,6 +1,3 @@
-<?php
-$id_petugas = $_SESSION['data']['id_petugas'];
-?>
 <div class="row">
     <div class="col s12 m9">
         <h3 class="orange-text">Laporan Harian</h3>
@@ -18,9 +15,10 @@ $id_petugas = $_SESSION['data']['id_petugas'];
     </thead>
     <tbody>
         <?php
+        $id_petugas = $_SESSION['data']['id_petugas'];
         $no = 1;
         $query = mysqli_query($koneksi, "SELECT * FROM pengajuan WHERE status='diterima' ");
-        while ($data = mysqli_fetch_assoc($query)) { ?>
+        while ($data = mysqli_fetch_assoc($query)) : ?>
             <tr>
                 <td><?= $no++; ?></td>
                 <td><?= $data['nidn']; ?></td>
@@ -28,7 +26,6 @@ $id_petugas = $_SESSION['data']['id_petugas'];
                 <td><?= $data['judul_penelitian']; ?></td>
                 <td><a class="btn modal-trigger green " href="index.php?p=detail_laporan&id_pengajuan=<?= $data['id_pengajuan'] ?>">Detail</a></td>
             </tr>
-        <?php  }
-        ?>
+        <?php endwhile; ?>
     </tbody>
 </table>

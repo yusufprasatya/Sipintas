@@ -25,9 +25,7 @@
 
         while ($data = mysqli_fetch_assoc($query)) :
             $counting = mysqli_query($koneksi, "SELECT * FROM ulasan WHERE id_pengajuan = '" . $data['id_pengajuan'] . "' ");
-            $total = mysqli_num_rows($counting);
-        ?>
-
+            $total = mysqli_num_rows($counting); ?>
             <tr>
                 <td><?= $no++; ?></td>
                 <td><?= $data['nidn']; ?></td>
@@ -43,7 +41,6 @@
                         <p>Tidak bisa mengupdate reviewer</p>
                     <?php endif; ?>
                 </td>
-
                 <td>
                     <a class="btn modal-trigger green " href="#more?id_pengajuan=<?= $data['id_pengajuan'] ?>">Detail</a>
                 </td>
@@ -138,9 +135,6 @@
                         <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
                     </div>
                 </div>
-
-
-
             </tr>
         <?php endwhile; ?>
     </tbody>

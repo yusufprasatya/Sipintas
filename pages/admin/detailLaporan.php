@@ -17,14 +17,14 @@
         $id_pengajuan = $_GET['id_pengajuan'];
         $no = 1;
         $query = mysqli_query($koneksi, "SELECT * FROM laporan_harian WHERE id_pengajuan='$id_pengajuan' ");
-        while ($r = mysqli_fetch_assoc($query)) { ?>
+        while ($data = mysqli_fetch_assoc($query)) : ?>
             <tr>
                 <td><?= $no++ ?></td>
-                <td><?= $r['tgl_kegiatan']; ?></td>
-                <td><?= $r['kegiatan']; ?></td>
-                <td><a target="_blank" href="view/foto_kegiatan.php?id_kegiatan=<?= $r['id_kegiatan'] ?>">Lihat Foto</a>
+                <td><?= $data['tgl_kegiatan']; ?></td>
+                <td><?= $data['kegiatan']; ?></td>
+                <td><a target="_blank" href="view/foto_kegiatan.php?id_kegiatan=<?= $data['id_kegiatan'] ?>">Lihat Foto</a>
                 </td>
             </tr>
-        <?php  } ?>
+        <?php endwhile; ?>
     </tbody>
 </table>
