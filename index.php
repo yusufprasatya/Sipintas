@@ -54,6 +54,41 @@
 			color: inherit;
 			text-decoration: underline;
 		}
+
+		#loginhome {
+			padding: 50px;
+			width: 40%;
+			margin: 0 auto;
+			margin-top: 10%;
+		}
+
+		@media (min-width:100px) and (max-width: 600px) {
+
+			#loginhome {
+				width: 100%;
+			}
+		}
+
+		.card-alert button {
+			background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+			border: medium none;
+			color: #fff;
+			font-size: 20px;
+			position: absolute;
+			right: 10px;
+			top: 15px;
+			color: inherit;
+		}
+
+		.card-alert a {
+			color: inherit;
+			font-weight: 500;
+		}
+
+		.card-alert a:hover {
+			color: inherit;
+			text-decoration: underline;
+		}
 	</style>
 </head>
 
@@ -71,14 +106,21 @@
 	<div class="container">
 		<?php
 		include 'config/koneksi.php';
-		if (@$_GET['p'] == "") {
-			include_once 'login.php';
-		} elseif (@$_GET['p'] == "login") {
-			include_once 'login.php';
-		} elseif (@$_GET['p'] == "logout") {
-			include_once 'logout.php';
-		}
-		?>
+		$page = $_GET['page'] ?? "";
+		switch ($page) {
+			case 'login':
+				include_once 'login.php';
+				break;
+			case 'logout':
+				include_once 'logout.php';
+				break;
+			case 'register':
+				include_once 'register.php';
+				break;
+			default:
+				include_once 'login.php';
+				break;
+		} ?>
 
 	</div>
 

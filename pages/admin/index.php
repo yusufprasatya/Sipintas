@@ -71,7 +71,7 @@ if (!isset($_SESSION['username'])) {
                 <li>
                     <div class="divider"></div>
                 </li>
-                <li><a class="waves-effect" href="../../index.php?p=logout"><i class="material-icons">logout</i>Logout</a></li>
+                <li><a class="waves-effect" href="../../index.php?page=logout"><i class="material-icons">logout</i>Logout</a></li>
             </ul>
             <a href="#" data-target="slide-out" class="btn sidenav-trigger"><i class="material-icons">menu</i></a>
         </div>

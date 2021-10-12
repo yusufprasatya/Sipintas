@@ -12,7 +12,7 @@
 		<!-- <input type="submit" name="login" value="Login" class="btn green" style="width: 100%;"> -->
 		<button type="submit" name="login" value="Login" class="btn green" style="width: 100%;">Masuk</button>
 	</form>
-	<center><small>Atau Daftar <a style="font-weight :bold;" href="register.php">Disini</a></small></center>
+	<center><small>Atau Daftar <a style="font-weight :bold;" href="index.php?page=register">Disini</a></small></center>
 </div>
 <?php
 if (isset($_POST['login'])) {
