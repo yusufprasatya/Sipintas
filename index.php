@@ -61,34 +61,6 @@
 			margin: 0 auto;
 			margin-top: 10%;
 		}
-
-		@media (min-width:100px) and (max-width: 600px) {
-
-			#loginhome {
-				width: 100%;
-			}
-		}
-
-		.card-alert button {
-			background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-			border: medium none;
-			color: #fff;
-			font-size: 20px;
-			position: absolute;
-			right: 10px;
-			top: 15px;
-			color: inherit;
-		}
-
-		.card-alert a {
-			color: inherit;
-			font-weight: 500;
-		}
-
-		.card-alert a:hover {
-			color: inherit;
-			text-decoration: underline;
-		}
 	</style>
 </head>
 
@@ -121,14 +93,12 @@
 				include_once 'login.php';
 				break;
 		} ?>
-
 	</div>
 
 	<script>
 		$(document).ready(function() {
 			$('.card-alert > button').on('click', function() {
 				$(this).closest('div.card-alert').fadeOut('slow');
-			})
 		})
 	</script>
 </body>
