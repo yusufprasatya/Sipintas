@@ -11,7 +11,6 @@
             <th>Nama</th>
             <th>Judul</th>
             <th>Tanggal Pengajuan</th>
-
             <th>Opsi</th>
         </tr>
     </thead>
